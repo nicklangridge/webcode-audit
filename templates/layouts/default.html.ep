@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Compare</title>
+    <%= javascript 'http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js' %>
+    <%= javascript '/js/diffview.js' %>
+    <%= javascript '/js/difflib.js' %>
+    <%= stylesheet '/css/diffview.css' %>
+    <%= stylesheet '/css/main.css' %>
+  </head>
+  <body>
+    <%= content %>
+    <%= javascript '/js/main.js' %>
+  </body>
+</html>

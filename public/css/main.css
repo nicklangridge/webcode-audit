@@ -1,0 +1,81 @@
+body {
+  font-family: Luxi Sans, Helvetica, Arial, Geneva, sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+
+input.path {
+  width: 420px;
+}
+
+input.label {
+  width: 50px;
+}
+
+input.plugin_dirs {
+  width: 500px;
+}
+
+input.module { 
+  width: 400px;
+}
+
+input.method {  
+  width: 200px;
+}
+
+input.submit {
+}
+
+.clear {
+  clear: both;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+}
+
+#spec {
+  padding: 8px;
+  background-color: #EFEFEF;
+  border-bottom: #A9A9A9 1px solid;
+  text-align: center;
+  line-height: 28px;
+  vertical-align:middle;
+  white-space: nowrap;
+}
+
+#menu {
+  padding: 10px 10px 13px 10px;
+  white-space: nowrap;
+  font-size: 12px;
+  background-color: #dedede;
+  border-top: #d0d0d0 2px solid;
+  border-bottom: #A9A9A9 1px solid;
+  white-space: nowrap;
+}
+
+#menu .panel {
+  float:left;
+  width: 50%;
+  text-align: center;
+}
+
+.disabled {
+  color: #999;
+}
+
+.code {
+  display:none;
+}
+
+#diff {
+  padding-top: 136px;
+  width:100%;
+}
+
+#diff table {
+  width: 100%;
+}
+  

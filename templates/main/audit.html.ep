@@ -1,0 +1,14 @@
+% layout 'default';
+
+<div id="header">
+  %= form_for audit => (method => 'post') => begin
+    <div id="spec">
+      Old <%= select_field a_codebase => ['select...', map {[$_ => $codebases->{$_}]} sort keys %$codebases] %> &nbsp;
+      New <%= select_field b_codebase => ['select...', map {[$_ => $codebases->{$_}]} sort keys %$codebases] %> &nbsp;
+      Plugins <%= input_tag 'plugin_dirs', class => "plugin_dirs" %> &nbsp; 
+      %= submit_button 'Go'
+    </div>
+  %= end
+</div>
+
+

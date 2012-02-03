@@ -1,0 +1,52 @@
+% layout 'default';
+
+<div id="header">
+  <form name="settings" method="post" action="/">
+    <input type="hidden" id="a_label" name="hidden_a_label" value="<%= $info->{a}->{label} %>" />
+    <input type="hidden" id="b_label" name="hidden_b_label" value="<%= $info->{b}->{label} %>" />
+  
+    <div id="spec">
+      <strong>Old</strong> &nbsp;
+      Label <input type="text" class="label" name="a_label" value="<%= $a_label %>" /> &nbsp;
+      Path <input type="text" class="path" name="a_path" value="<%= $a_path %>" /> &nbsp;
+      <strong>New</strong> &nbsp;
+      Label <input type="text" class="label" name="b_label" value="<%= $b_label %>" /> &nbsp;
+      Path <input type="text" class="path" name="b_path" value="<%= $b_path %>" /> &nbsp;     
+      <br />
+      Plugins <input type="text" class="plugin_dirs" name="plugin_dirs" value="<%= $plugin_dirs %>" /> &nbsp;
+      Module <input type="text" class="module" name="module" value="<%= $module %>" /> &nbsp; 
+      Method <input type="text" class="method" name="method" value="<%= $method %>" /> &nbsp; 
+      <input type="submit" class="submit" value="Go">
+    </div>
+  
+  % if ($info->{plugin_dirs}) {
+    <div id="menu">
+    % foreach my $menu (1, 2) {  
+      <div class="panel">
+        % foreach my $codebase (qw(a b)) {
+          <div>
+            <b><%= $info->{$codebase}->{label} %></b> &nbsp;
+          % foreach my $i (0..@{$info->{plugin_dirs}} - 1) {
+            % my $dir = $info->{plugin_dirs}->[$i];
+            % my $disabled = ($info->{$codebase}->{methods}->{$dir} ? '' : 'disabled');    
+            % (my $id = "${codebase}_$dir") =~ s/\//:/g;
+            % my $text = $info->{$codebase}->{methods}->{$dir};
+            % my $checked = 'checked' if (($menu == 1 and $codebase eq 'a' and $i == 0) or ($menu == 2 and $codebase eq 'b' and $i == 0));
+            <span class="<%= $disabled %>">
+              <input type="radio" class="rad" id="rad_<%= $menu %>_<%= $id %>" name="<%= "menu_$menu" %>" value="<%= $id %>" <%= $disabled %> <%= $checked %> /> 
+              <label for="rad_<%= $menu %>_<%= $id %>"><%= $info->{plugin_names}->{$dir} %></label>
+            </span>
+            <textarea id="<%= $id %>" class="code"><%= $text %></textarea>
+          % }
+          </div>
+        % }
+      </div>
+      % }
+      <div class="clear"></div>
+    </div>
+  </form>
+</div>
+
+<div id="diff"></div>
+% }
+
