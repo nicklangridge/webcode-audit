@@ -1,0 +1,11 @@
+                    ENSEMBL     COMMON      METAZOA
+
+MODULE_X            present     present     new
+method_a            present     present     present      
+method_b            new           
+method_c            removed     present     present
+
+MODULE_Y            present     present     new
+method_a            present     present     present      
+method_b            new           
+method_c            removed     present     present

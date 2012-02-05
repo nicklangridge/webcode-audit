@@ -32,7 +32,7 @@ input.submit {
 }
 
 #header {
-  position: fixed;
+  /*position: fixed;*/
   width: 100%;
 }
 
@@ -78,4 +78,61 @@ input.submit {
 #diff table {
   width: 100%;
 }
+
+#results {
+  padding: 20px;
+}
+
+.modules {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.modules th, .modules td {
+  text-align: left;
+  border: #999999 1px solid;
+  margin: 0;
+  padding: 4px;
+  width: 25%;
+}
+
+.modules tr.mod {
+  padding: 7px;
+  color: #666666;
+  background-color: #dddddd;
+  width: 1%;
+  white-space: nowrap;
+}
+
+.modules td.plugin {
+  font-weight: bold;
+}
+
+.modules td.method {
+  color: #666666;
+  padding-left: 20px;
+}
+
+.modules td.mod span {
+  color: #000000;
+}
+
+.modules td.new {
+  color: green;
+  background-color: 
+}
+
+.modules td.changed {
+  color: orange;
+}
+
+.modules td.removed {
+  color: red;
+}
+
+.modules td.na span {
+  display: none;
+}
+
   

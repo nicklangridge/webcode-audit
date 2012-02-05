@@ -3,12 +3,39 @@
 <div id="header">
   %= form_for audit => (method => 'post') => begin
     <div id="spec">
-      Old <%= select_field a_codebase => ['select...', map {[$_ => $codebases->{$_}]} sort keys %$codebases] %> &nbsp;
-      New <%= select_field b_codebase => ['select...', map {[$_ => $codebases->{$_}]} sort keys %$codebases] %> &nbsp;
+      Old <%= select_field old_codebase => ['select...', sort keys %$codebases] %> &nbsp;
+      New <%= select_field new_codebase => ['select...', sort keys %$codebases] %> &nbsp;
       Plugins <%= input_tag 'plugin_dirs', class => "plugin_dirs" %> &nbsp; 
       %= submit_button 'Go'
     </div>
   %= end
 </div>
+
+% #<pre><%= dumper $audit %></prd>
+
+% if ($audit) {
+<div id="results">
+  <table class="modules">
+    % foreach my $module (sort keys %$audit) {
+      % (my $module_name = $module) =~ s/([^\/]+\.pm)$/<span>$1<\/span>/; 
+    <tr class="mod">
+      <td class="mod"><%== $module_name %></td>
+      % foreach my $plugin ('ensembl', @$plugins) {
+      <td class="plugin"><%= $plugin %></td>
+      % }
+    </tr>
+      % foreach my $method (sort keys %{$audit->{$module}->{'/'}->{methods}}) {
+    <tr class="method">
+      <td class="method"><%== $method %></td>
+        % foreach my $plugin ('/', @$plugins) {
+        %   my $status = $audit->{$module}->{$plugin}->{methods}->{$method}; 
+      <td class="<%= $status %>"><span><%== $module_key->{$status} %></span></td>
+        % }
+    </tr>
+      % }
+    % }
+  </table>  
+</div>  
+% }
 
 

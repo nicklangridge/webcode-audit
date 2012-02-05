@@ -3171,3 +3171,1615 @@ Global symbol "$codebaes" requires explicit package name at template "main/audit
 [Fri Feb  3 16:46:34 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:8.0) Gecko/20100101 Firefox/8.0).
 [Fri Feb  3 16:46:34 2012] [debug] Dispatching "Compare::Main->audit".
 [Fri Feb  3 16:46:34 2012] [debug] 200 OK (0.047030s, 21.263/s).
+[Fri Feb  3 18:13:34 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Fri Feb  3 18:13:34 2012] [info] Server listening (http://*:3000)
+[Fri Feb  3 18:13:39 2012] [debug] Your secret passphrase needs to be changed!!!
+[Fri Feb  3 18:13:39 2012] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Fri Feb  3 18:13:39 2012] [debug] Dispatching "Compare::Main->index".
+[Fri Feb  3 18:13:43 2012] [debug] Rendering template "main/index.html.ep".
+[Fri Feb  3 18:13:44 2012] [debug] Rendering template "layouts/default.html.ep".
+[Fri Feb  3 18:13:44 2012] [debug] 200 OK (5.138889s, 0.195/s).
+[Fri Feb  3 18:14:23 2012] [debug] GET /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Fri Feb  3 18:14:23 2012] [debug] Dispatching "Compare::Main->audit".
+[Fri Feb  3 18:14:23 2012] [debug] Rendering template "main/audit.html.ep".
+[Fri Feb  3 18:14:23 2012] [error] syntax error at template "main/audit.html.ep" line 11, near "</div>".
+6:       Old <%= select_field a_codebase => ['select...', map {[$_ => $codebases->{$_}]} sort keys %$codebases] %> &nbsp;
+7:       New <%= select_field b_codebase => ['select...', map {[$_ => $codebases->{$_}]} sort keys %$codebases] %> &nbsp;
+8:       Plugins <%= input_tag 'plugin_dirs', class => "plugin_dirs" %> &nbsp; 
+9:       %= submit_button 'Go'
+10:     </div>
+11:   %= end
+12: </div>
+13: 
+14: 
+
+[Fri Feb  3 18:14:23 2012] [debug] Template "exception.development.html.ep" not found.
+[Fri Feb  3 18:14:23 2012] [debug] Template "exception.html.ep" not found.
+[Fri Feb  3 18:14:23 2012] [debug] Rendering inline template.
+[Fri Feb  3 18:14:24 2012] [debug] 500 Internal Server Error (0.366382s, 2.729/s).
+[Fri Feb  3 18:28:50 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Fri Feb  3 18:28:50 2012] [info] Server listening (http://*:3000)
+[Fri Feb  3 18:28:53 2012] [debug] Your secret passphrase needs to be changed!!!
+[Fri Feb  3 18:28:53 2012] [debug] GET /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Fri Feb  3 18:28:53 2012] [debug] Dispatching "Compare::Main->audit".
+[Fri Feb  3 18:28:54 2012] [debug] Rendering template "main/audit.html.ep".
+[Fri Feb  3 18:28:54 2012] [debug] Rendering template "layouts/default.html.ep".
+[Fri Feb  3 18:28:54 2012] [debug] 200 OK (1.385744s, 0.722/s).
+[Fri Feb  3 18:29:01 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Fri Feb  3 18:29:01 2012] [debug] Dispatching "Compare::Main->audit".
+[Fri Feb  3 18:29:01 2012] [debug] 200 OK (0.010754s, 92.989/s).
+[Fri Feb  3 18:29:39 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Fri Feb  3 18:29:39 2012] [debug] Dispatching "Compare::Main->audit".
+[Fri Feb  3 18:29:39 2012] [debug] 200 OK (0.010826s, 92.370/s).
+[Fri Feb  3 18:46:32 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Fri Feb  3 18:47:39 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Fri Feb  3 18:47:43 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Fri Feb  3 18:47:47 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Fri Feb  3 18:49:32 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Fri Feb  3 18:49:53 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Fri Feb  3 18:50:00 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Fri Feb  3 18:51:23 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Fri Feb  3 18:51:37 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Fri Feb  3 18:52:01 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Fri Feb  3 18:52:43 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Fri Feb  3 18:53:02 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:09:25 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:09:25 2012] [info] Server listening (http://*:3000)
+[Sat Feb  4 08:09:32 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 08:09:32 2012] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 08:09:32 2012] [debug] Dispatching "Compare::Main->index".
+[Sat Feb  4 08:09:34 2012] [error] Global symbol "@subs" requires explicit package name at script/../lib/Compare/Utils.pm line 50.
+Compilation failed in require at script/../lib/Compare/Main.pm line 3.
+BEGIN failed--compilation aborted at script/../lib/Compare/Main.pm line 3.
+Compilation failed in require at (eval 251) line 1.
+
+[Sat Feb  4 08:09:34 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  4 08:09:34 2012] [debug] Template "exception.html.ep" not found.
+[Sat Feb  4 08:09:34 2012] [debug] Rendering inline template.
+[Sat Feb  4 08:09:34 2012] [debug] Rendering inline template.
+[Sat Feb  4 08:09:34 2012] [debug] 500 Internal Server Error (2.225186s, 0.449/s).
+[Sat Feb  4 08:09:54 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:09:55 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 08:09:55 2012] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 08:09:55 2012] [debug] Dispatching "Compare::Main->index".
+[Sat Feb  4 08:09:56 2012] [debug] Rendering template "main/index.html.ep".
+[Sat Feb  4 08:09:56 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 08:09:56 2012] [debug] 200 OK (0.265094s, 3.772/s).
+[Sat Feb  4 08:10:04 2012] [debug] GET /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 08:10:04 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 08:10:04 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 08:10:04 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 08:10:04 2012] [debug] 200 OK (0.026216s, 38.145/s).
+[Sat Feb  4 08:15:04 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:17:26 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:17:43 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:18:14 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:18:48 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:18:57 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:19:23 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:19:25 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:20:11 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:20:19 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:20:23 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:20:49 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:20:52 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:21:11 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:21:27 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:21:39 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:21:57 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:22:19 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:22:31 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 08:22:31 2012] [debug] GET /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 08:22:31 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 08:22:31 2012] [error] syntax error at script/../lib/Compare/Main.pm line 51, near ")
+
+    warn"
+Global symbol "@modules" requires explicit package name at script/../lib/Compare/Main.pm line 51.
+Compilation failed in require at (eval 1779) line 1.
+
+[Sat Feb  4 08:22:31 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  4 08:22:31 2012] [debug] Template "exception.html.ep" not found.
+[Sat Feb  4 08:22:31 2012] [debug] Rendering inline template.
+[Sat Feb  4 08:22:31 2012] [debug] Rendering inline template.
+[Sat Feb  4 08:22:31 2012] [debug] 500 Internal Server Error (0.236093s, 4.236/s).
+[Sat Feb  4 08:22:44 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:22:45 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 08:22:45 2012] [debug] GET /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 08:22:45 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 08:22:45 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 08:22:45 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 08:22:45 2012] [debug] 200 OK (0.213432s, 4.685/s).
+[Sat Feb  4 08:22:47 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 08:22:47 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 08:22:47 2012] [debug] 200 OK (0.010513s, 95.120/s).
+[Sat Feb  4 08:22:52 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 08:22:52 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 08:22:57 2012] [debug] 200 OK (5.023209s, 0.199/s).
+[Sat Feb  4 08:23:51 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 08:23:51 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 08:23:53 2012] [debug] 200 OK (2.137697s, 0.468/s).
+[Sat Feb  4 08:24:24 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:25:04 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:25:48 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:26:21 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:26:31 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:26:46 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:26:59 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:27:07 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:27:27 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:27:33 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:27:35 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:27:42 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:27:44 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 08:27:44 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 08:27:44 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 08:27:44 2012] [error] invalid top directory at C:/strawberry/perl/lib/File/Find.pm line 598.
+
+[Sat Feb  4 08:27:44 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  4 08:27:44 2012] [debug] Template "exception.html.ep" not found.
+[Sat Feb  4 08:27:44 2012] [debug] Rendering inline template.
+[Sat Feb  4 08:27:45 2012] [debug] Rendering inline template.
+[Sat Feb  4 08:27:45 2012] [debug] 500 Internal Server Error (0.255420s, 3.915/s).
+[Sat Feb  4 08:27:45 2012] [error] invalid top directory at C:/strawberry/perl/lib/File/Find.pm line 598.
+
+[Sat Feb  4 08:28:01 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:28:15 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 08:28:15 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 08:28:15 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 08:28:15 2012] [error] invalid top directory at C:/strawberry/perl/lib/File/Find.pm line 598.
+
+[Sat Feb  4 08:28:15 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  4 08:28:15 2012] [debug] Template "exception.html.ep" not found.
+[Sat Feb  4 08:28:15 2012] [debug] Rendering inline template.
+[Sat Feb  4 08:28:15 2012] [debug] Rendering inline template.
+[Sat Feb  4 08:28:15 2012] [debug] 500 Internal Server Error (0.264339s, 3.783/s).
+[Sat Feb  4 08:28:15 2012] [error] invalid top directory at C:/strawberry/perl/lib/File/Find.pm line 598.
+
+[Sat Feb  4 08:28:21 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 08:28:21 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 08:28:21 2012] [error] invalid top directory at C:/strawberry/perl/lib/File/Find.pm line 598.
+
+[Sat Feb  4 08:28:21 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  4 08:28:21 2012] [debug] Template "exception.html.ep" not found.
+[Sat Feb  4 08:28:21 2012] [debug] 500 Internal Server Error (0.026920s, 37.147/s).
+[Sat Feb  4 08:28:21 2012] [error] invalid top directory at C:/strawberry/perl/lib/File/Find.pm line 598.
+
+[Sat Feb  4 08:28:43 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:28:44 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 08:28:44 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 08:28:44 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 08:28:44 2012] [error] invalid top directory at C:/strawberry/perl/lib/File/Find.pm line 598.
+
+[Sat Feb  4 08:28:44 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  4 08:28:44 2012] [debug] Template "exception.html.ep" not found.
+[Sat Feb  4 08:28:44 2012] [debug] Rendering inline template.
+[Sat Feb  4 08:28:45 2012] [debug] Rendering inline template.
+[Sat Feb  4 08:28:45 2012] [debug] 500 Internal Server Error (0.263674s, 3.793/s).
+[Sat Feb  4 08:28:45 2012] [error] invalid top directory at C:/strawberry/perl/lib/File/Find.pm line 598.
+
+[Sat Feb  4 08:29:27 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:29:35 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:29:39 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 08:29:39 2012] [debug] GET /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 08:29:39 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 08:29:39 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 08:29:39 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 08:29:39 2012] [debug] 200 OK (0.211774s, 4.722/s).
+[Sat Feb  4 08:29:46 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 08:29:46 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 08:29:49 2012] [debug] 200 OK (3.516944s, 0.284/s).
+[Sat Feb  4 08:42:34 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:42:55 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:43:06 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:43:33 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:43:37 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:43:54 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:44:06 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:44:17 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:44:37 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:44:48 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:45:06 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:45:37 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:45:43 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:45:45 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 08:45:45 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 08:45:45 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 08:45:46 2012] [error] Global symbol "$a_dir" requires explicit package name at script/../lib/Compare/Main.pm line 58.
+Global symbol "$b_dir" requires explicit package name at script/../lib/Compare/Main.pm line 58.
+Compilation failed in require at (eval 4557) line 1.
+
+[Sat Feb  4 08:45:46 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  4 08:45:46 2012] [debug] Template "exception.html.ep" not found.
+[Sat Feb  4 08:45:46 2012] [debug] Rendering inline template.
+[Sat Feb  4 08:45:46 2012] [debug] Rendering inline template.
+[Sat Feb  4 08:45:46 2012] [debug] 500 Internal Server Error (0.934700s, 1.070/s).
+[Sat Feb  4 08:45:57 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:45:59 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 08:45:59 2012] [debug] GET /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 08:45:59 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 08:46:00 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 08:46:00 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 08:46:00 2012] [debug] 200 OK (0.261462s, 3.825/s).
+[Sat Feb  4 08:46:14 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 08:46:14 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 08:46:14 2012] [debug] 200 OK (0.009568s, 104.515/s).
+[Sat Feb  4 08:46:21 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 08:46:21 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 08:46:21 2012] [debug] 200 OK (0.008257s, 121.109/s).
+[Sat Feb  4 08:46:31 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 08:46:31 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 08:46:31 2012] [debug] 200 OK (0.008181s, 122.234/s).
+[Sat Feb  4 08:46:55 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:47:03 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:47:05 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 08:47:05 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 08:47:05 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 08:47:05 2012] [error] Global symbol "$codebases" requires explicit package name at script/../lib/Compare/Main.pm line 45.
+Global symbol "$codebases" requires explicit package name at script/../lib/Compare/Main.pm line 46.
+Compilation failed in require at (eval 4715) line 1.
+
+[Sat Feb  4 08:47:05 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  4 08:47:05 2012] [debug] Template "exception.html.ep" not found.
+[Sat Feb  4 08:47:05 2012] [debug] Rendering inline template.
+[Sat Feb  4 08:47:05 2012] [debug] Rendering inline template.
+[Sat Feb  4 08:47:05 2012] [debug] 500 Internal Server Error (0.227426s, 4.397/s).
+[Sat Feb  4 08:47:19 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:47:31 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:47:37 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:47:48 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:47:48 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 08:47:48 2012] [debug] GET /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 08:47:48 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 08:47:48 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 08:47:48 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 08:47:48 2012] [debug] 200 OK (0.220392s, 4.537/s).
+[Sat Feb  4 08:47:59 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 08:47:59 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 08:47:59 2012] [debug] 200 OK (0.011761s, 85.027/s).
+[Sat Feb  4 08:48:59 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:49:07 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 08:49:07 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 08:49:07 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 08:49:08 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 08:49:08 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 08:49:08 2012] [debug] 200 OK (0.730303s, 1.369/s).
+[Sat Feb  4 08:59:03 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:59:31 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 08:59:38 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:00:18 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:01:41 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:01:59 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:02:29 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:02:37 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:34:17 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:34:26 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:35:01 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:35:13 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:36:57 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:37:05 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:37:29 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:37:39 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:37:59 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:39:14 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:39:48 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:40:02 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:41:04 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:41:25 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:41:31 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:42:12 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:42:23 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:42:25 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:42:29 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:42:43 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:42:45 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:42:53 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:42:55 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:43:15 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:43:21 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:43:27 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:43:51 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:44:05 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:45:27 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:45:29 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:45:35 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:45:41 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:46:13 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:53:47 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:54:02 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:54:04 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:54:08 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:54:20 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:54:22 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:54:24 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:54:27 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:54:37 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:54:56 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:55:18 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:55:25 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:55:31 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:55:33 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:55:41 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:55:47 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:56:41 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:57:22 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:57:43 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:58:00 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:58:02 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:58:14 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:58:16 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:58:18 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:58:25 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:58:55 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 09:59:03 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 10:00:16 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 10:00:34 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 10:00:40 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 10:00:48 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 10:00:50 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 10:05:46 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 10:05:56 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 10:07:11 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 10:07:53 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 10:08:01 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 10:08:07 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 10:08:11 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 10:08:18 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 10:08:24 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 10:08:30 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 10:08:50 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 10:09:09 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 10:09:44 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 10:10:06 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 10:10:33 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 10:11:09 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 10:11:11 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 10:11:13 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 10:11:13 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 10:11:13 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 10:11:14 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 10:11:14 2012] [error] Global symbol "@plugins" requires explicit package name at template "main/audit.html.ep" line 19, near "    <td><%= $plugin %></td>".
+14: % if ($status) {
+15: <table>
+16:   <tr>
+17:     <td></td>
+18:     <td>ensembl</td>  
+19:   % foreach my $plugin (@plugins) {
+20:     <td><%= $plugin %></td>
+21:   % }
+22:   </tr>
+23: 
+24: % }
+
+[Sat Feb  4 10:11:14 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  4 10:11:14 2012] [debug] Template "exception.html.ep" not found.
+[Sat Feb  4 10:11:14 2012] [debug] Rendering inline template.
+[Sat Feb  4 10:11:14 2012] [debug] Rendering inline template.
+[Sat Feb  4 10:11:14 2012] [debug] 500 Internal Server Error (0.962015s, 1.039/s).
+[Sat Feb  4 10:59:44 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 10:59:44 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 10:59:44 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 10:59:44 2012] [error] Global symbol "@plugins" requires explicit package name at template "main/audit.html.ep" line 19, near "    <td><%= $plugin %></td>".
+14: % if ($status) {
+15: <table>
+16:   <tr>
+17:     <td></td>
+18:     <td>ensembl</td>  
+19:   % foreach my $plugin (@plugins) {
+20:     <td><%= $plugin %></td>
+21:   % }
+22:   </tr>
+23: 
+24: % }
+
+[Sat Feb  4 10:59:44 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  4 10:59:44 2012] [debug] Template "exception.html.ep" not found.
+[Sat Feb  4 10:59:44 2012] [debug] 500 Internal Server Error (0.779908s, 1.282/s).
+[Sat Feb  4 10:59:59 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:00:01 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:00:01 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:00:01 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:00:02 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:00:02 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:00:02 2012] [debug] HASH(0x1f703c8c)  (0.969423s, 1.032/s).
+[Sat Feb  4 11:00:05 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:00:05 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:00:05 2012] [debug] HASH(0x1f703eac)  (0.714653s, 1.399/s).
+[Sat Feb  4 11:00:36 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:00:36 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:00:37 2012] [debug] HASH(0x1f705c7c)  (0.744920s, 1.342/s).
+[Sat Feb  4 11:01:00 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:01:02 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:01:12 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:01:13 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:01:13 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:01:13 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:01:14 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:01:14 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:01:14 2012] [debug] HASH(0x20065944)  (0.928603s, 1.077/s).
+[Sat Feb  4 11:01:48 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:01:51 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:01:51 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:01:51 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:01:52 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:01:52 2012] [error] dump is not supported at template "main/audit.html.ep" line 14, near "".
+9:       %= submit_button 'Go'
+10:     </div>
+11:   %= end
+12: </div>
+13: 
+14: <pre><%= dump $status %></pre>
+15: 
+16: % if ($status) {
+17: <table>
+18:   <tr>
+19:     <td></td>
+
+[Sat Feb  4 11:01:52 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  4 11:01:52 2012] [debug] Template "exception.html.ep" not found.
+[Sat Feb  4 11:01:52 2012] [debug] Rendering inline template.
+[Sat Feb  4 11:01:52 2012] [debug] Rendering inline template.
+[Sat Feb  4 11:01:52 2012] [debug] 500 Internal Server Error (0.967953s, 1.033/s).
+[Sat Feb  4 11:01:59 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:02:00 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:02:00 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:02:00 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:02:01 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:02:01 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:02:01 2012] [debug] HASH(0x207b5954)  (0.933420s, 1.071/s).
+[Sat Feb  4 11:02:52 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:02:59 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:02:59 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:02:59 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:03:00 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:03:00 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:03:00 2012] [debug] HASH(0x20da9614)  (0.929199s, 1.076/s).
+[Sat Feb  4 11:03:51 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:03:51 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:03:52 2012] [debug] HASH(0x20dab774)  (0.736704s, 1.357/s).
+[Sat Feb  4 11:04:27 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:05:20 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:05:27 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:05:35 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:06:09 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:06:15 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:06:20 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:06:22 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:06:22 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:06:22 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:06:23 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:06:23 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:06:23 2012] [debug] HASH(0x222b593c)  (0.946768s, 1.056/s).
+[Sat Feb  4 11:06:52 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:06:54 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:06:54 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:06:54 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:06:55 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:06:55 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:06:55 2012] [debug] HASH(0x22605a54)  (0.938298s, 1.066/s).
+[Sat Feb  4 11:07:20 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:09:05 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:09:51 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:09:51 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:09:51 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:09:52 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:09:52 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:09:52 2012] [debug] HASH(0x22e359d4)  (0.954276s, 1.048/s).
+[Sat Feb  4 11:11:13 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:11:13 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:11:13 2012] [debug] HASH(0x22c4832c)  (0.727395s, 1.375/s).
+[Sat Feb  4 11:12:44 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:13:12 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:13:19 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:14:25 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:14:25 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:14:25 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:14:26 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:14:26 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:14:26 2012] [debug] HASH(0x238c5954)  (0.944649s, 1.059/s).
+[Sat Feb  4 11:15:04 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:15:04 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:15:05 2012] [debug] HASH(0x238c59c4)  (0.729391s, 1.371/s).
+[Sat Feb  4 11:16:20 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:16:20 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:16:21 2012] [debug] HASH(0x238c6c8c)  (0.736176s, 1.358/s).
+[Sat Feb  4 11:16:56 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:16:56 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:16:56 2012] [debug] HASH(0x236498d4)  (0.731095s, 1.368/s).
+[Sat Feb  4 11:17:00 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:17:00 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:17:01 2012] [debug] HASH(0x2364841c)  (0.743066s, 1.346/s).
+[Sat Feb  4 11:20:27 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:20:27 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:20:28 2012] [debug] HASH(0x238ce024)  (0.757178s, 1.321/s).
+[Sat Feb  4 11:22:46 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:22:48 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:22:48 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:22:48 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:22:49 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:22:49 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:22:49 2012] [debug] HASH(0x23cfb204)  (0.949129s, 1.054/s).
+[Sat Feb  4 11:23:00 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:23:03 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:23:03 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:23:03 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:23:04 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:23:04 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:23:04 2012] [debug] HASH(0x24185914)  (0.963003s, 1.038/s).
+[Sat Feb  4 11:24:57 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:25:04 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:25:04 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:25:04 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:25:05 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:25:05 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:25:05 2012] [debug] HASH(0x2457d19c)  (1.099516s, 0.909/s).
+[Sat Feb  4 11:25:47 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:25:47 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:25:49 2012] [debug] HASH(0x2446f6ac)  (2.291099s, 0.436/s).
+[Sat Feb  4 11:26:31 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:26:36 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:26:36 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:26:36 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:26:36 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:26:36 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:26:36 2012] [debug] HASH(0x2499e59c)  (0.378909s, 2.639/s).
+[Sat Feb  4 11:27:05 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:27:09 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:27:09 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:27:09 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:27:09 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:27:09 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:27:09 2012] [debug] HASH(0x24ec24ac)  (0.402760s, 2.483/s).
+[Sat Feb  4 11:27:35 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:27:35 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:27:35 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:27:35 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:27:35 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:27:36 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:27:36 2012] [debug] HASH(0x2752595c)  (0.505808s, 1.977/s).
+[Sat Feb  4 11:30:50 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:30:58 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:31:16 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:31:38 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:31:43 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:31:47 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:31:47 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:31:47 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:31:47 2012] [error] syntax error at script/../lib/Compare/Main.pm line 74, near "$self"
+Global symbol "$module_key" requires explicit package name at script/../lib/Compare/Main.pm line 78.
+Compilation failed in require at (eval 24215) line 1.
+
+[Sat Feb  4 11:31:47 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  4 11:31:47 2012] [debug] Template "exception.html.ep" not found.
+[Sat Feb  4 11:31:47 2012] [debug] Rendering inline template.
+[Sat Feb  4 11:31:47 2012] [debug] Rendering inline template.
+[Sat Feb  4 11:31:47 2012] [debug] 500 Internal Server Error (0.254403s, 3.931/s).
+[Sat Feb  4 11:32:03 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:32:03 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:32:03 2012] [error] Can't locate object method "audit" via package "Compare::Main" at C:/strawberry/perl/site/bin/../lib/Mojolicious/Routes.pm line 397
+
+[Sat Feb  4 11:32:03 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  4 11:32:03 2012] [debug] Template "exception.html.ep" not found.
+[Sat Feb  4 11:32:03 2012] [debug] Rendering inline template.
+[Sat Feb  4 11:32:03 2012] [debug] Rendering inline template.
+[Sat Feb  4 11:32:03 2012] [debug] 500 Internal Server Error (0.122814s, 8.142/s).
+[Sat Feb  4 11:32:03 2012] [error] Can't locate object method "audit" via package "Compare::Main" at C:/strawberry/perl/site/bin/../lib/Mojolicious/Routes.pm line 397
+
+[Sat Feb  4 11:32:19 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:32:23 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:32:23 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:32:23 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:32:23 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:32:24 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:32:24 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:32:24 2012] [debug] HASH(0x28bbf60c)  (0.440358s, 2.271/s).
+[Sat Feb  4 11:32:56 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:33:05 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:33:08 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:33:08 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:33:08 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:33:09 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:33:09 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:33:09 2012] [debug] HASH(0x2957593c)  (0.469360s, 2.131/s).
+[Sat Feb  4 11:33:28 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:33:30 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:33:30 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:33:30 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:33:30 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:33:30 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:33:30 2012] [debug] HASH(0x299b5954)  (0.461193s, 2.168/s).
+[Sat Feb  4 11:35:51 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:35:54 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:35:54 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:35:54 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:35:54 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:35:54 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:35:54 2012] [debug] HASH(0x29e7aa2c)  (0.467426s, 2.139/s).
+[Sat Feb  4 11:36:34 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:36:34 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:36:35 2012] [debug] HASH(0x29e7c5ac)  (0.245776s, 4.069/s).
+[Sat Feb  4 11:38:47 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:38:54 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:38:54 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:38:54 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:38:54 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:38:54 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:38:54 2012] [debug] HASH(0x2a2aff8c)  (0.461409s, 2.167/s).
+[Sat Feb  4 11:39:34 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:39:34 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:39:34 2012] [debug] HASH(0x2a132dd4)  (0.246467s, 4.057/s).
+[Sat Feb  4 11:41:18 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:41:18 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:41:18 2012] [debug] HASH(0x2a133adc)  (0.245878s, 4.067/s).
+[Sat Feb  4 11:42:54 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:42:57 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:42:58 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:42:58 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:42:58 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:42:58 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:42:58 2012] [debug] HASH(0x2a8b5954)  (0.466612s, 2.143/s).
+[Sat Feb  4 11:45:44 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:45:48 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:45:56 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:46:50 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:46:55 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:47:30 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:47:34 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:47:38 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:47:49 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:47:53 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:48:07 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:48:12 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:48:35 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:48:35 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:48:35 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:48:40 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:48:40 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:48:40 2012] [debug] HASH(0x2ca564bc)  (4.597969s, 0.217/s).
+[Sat Feb  4 11:49:27 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:49:31 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:49:32 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:49:32 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:49:32 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:49:33 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:49:33 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:49:33 2012] [debug] HASH(0x2d1ba4fc)  (0.622819s, 1.606/s).
+[Sat Feb  4 11:49:42 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:49:44 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:49:44 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:49:44 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:49:45 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:49:45 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:49:45 2012] [debug] HASH(0x2e4e648c)  (0.615779s, 1.624/s).
+[Sat Feb  4 11:49:53 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:49:54 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:49:54 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:49:54 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:49:54 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:49:54 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:49:54 2012] [debug] HASH(0x2e9664bc)  (0.624169s, 1.602/s).
+[Sat Feb  4 11:54:33 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:54:35 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:54:35 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:54:35 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:54:39 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:54:39 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:54:39 2012] [debug] HASH(0x2ed864ec)  (3.684850s, 0.271/s).
+[Sat Feb  4 11:55:24 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:55:25 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:55:25 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:55:25 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:55:29 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:55:29 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:55:29 2012] [debug] HASH(0x2f22651c)  (3.606530s, 0.277/s).
+[Sat Feb  4 11:56:53 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:56:56 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:56:56 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:56:56 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:56:58 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:56:58 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:56:58 2012] [debug] HASH(0x2f6c64a4)  (1.769428s, 0.565/s).
+[Sat Feb  4 11:57:52 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:57:54 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:57:54 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:57:54 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:57:54 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:57:54 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:57:54 2012] [debug] HASH(0x2fb464bc)  (0.610455s, 1.638/s).
+[Sat Feb  4 11:58:02 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:58:04 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 11:58:04 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 11:58:04 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 11:58:05 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 11:58:05 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 11:58:05 2012] [debug] HASH(0x2ffbe4d4)  (0.652144s, 1.533/s).
+[Sat Feb  4 11:58:40 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:58:44 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 11:58:54 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 12:02:00 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 12:02:00 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 12:02:00 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 12:02:01 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 12:02:01 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 12:02:01 2012] [debug] HASH(0x309764bc)  (0.706885s, 1.415/s).
+[Sat Feb  4 12:02:12 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 12:02:12 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 12:02:13 2012] [debug] HASH(0x3097695c)  (0.403471s, 2.478/s).
+[Sat Feb  4 12:02:41 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 12:02:41 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 12:02:41 2012] [debug] HASH(0x30978044)  (0.412422s, 2.425/s).
+[Sat Feb  4 12:03:08 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 12:03:08 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 12:03:08 2012] [debug] HASH(0x3076c51c)  (0.406104s, 2.462/s).
+[Sat Feb  4 12:05:10 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 12:06:04 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 12:06:04 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 12:06:04 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 12:06:04 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 12:06:04 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 12:06:04 2012] [debug] HASH(0x30db64f4)  (0.627770s, 1.593/s).
+[Sat Feb  4 12:06:41 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 12:06:48 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 12:07:33 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 12:07:37 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 12:13:18 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 12:31:10 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 12:31:27 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 12:32:11 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 12:32:15 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 12:58:32 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 12:58:40 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 12:58:48 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 12:58:55 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 12:59:23 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:00:18 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:00:55 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:01:06 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:01:27 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:01:34 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:09:26 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:09:53 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:10:01 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:10:05 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:10:05 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 13:10:05 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 13:10:05 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 13:10:06 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 13:10:06 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 13:10:06 2012] [debug] HASH(0x34dc68f4)  (0.620978s, 1.610/s).
+[Sat Feb  4 13:10:10 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 13:10:10 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 13:10:10 2012] [debug] HASH(0x153bbf84)  (0.388932s, 2.571/s).
+[Sat Feb  4 13:10:18 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:10:54 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:12:07 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:12:11 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:12:25 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:13:40 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:13:47 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:17:39 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:17:46 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:18:08 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:19:14 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:19:40 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:20:08 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:20:49 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:21:21 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:21:40 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:22:23 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:22:31 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:22:36 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:22:50 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:23:23 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:23:41 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:23:45 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:23:58 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:24:06 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:24:16 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:24:35 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:24:55 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:24:59 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:25:06 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:25:17 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:25:24 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:25:34 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 13:25:34 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 13:25:34 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 13:25:34 2012] [error] syntax error at script/../lib/Compare/Main.pm line 68, near "$status"
+Global symbol "$plugin" requires explicit package name at script/../lib/Compare/Main.pm line 68.
+Global symbol "$module_state" requires explicit package name at script/../lib/Compare/Main.pm line 68.
+syntax error at script/../lib/Compare/Main.pm line 71, near "}"
+syntax error at script/../lib/Compare/Main.pm line 88, near "}"
+Can't use global @_ in "my" at script/../lib/Compare/Main.pm line 91, near "= @_"
+syntax error at script/../lib/Compare/Main.pm line 99, near "}"
+Compilation failed in require at (eval 37739) line 1.
+
+[Sat Feb  4 13:25:34 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  4 13:25:34 2012] [debug] Template "exception.html.ep" not found.
+[Sat Feb  4 13:25:34 2012] [debug] Rendering inline template.
+[Sat Feb  4 13:25:34 2012] [debug] Rendering inline template.
+[Sat Feb  4 13:25:34 2012] [debug] 500 Internal Server Error (0.299533s, 3.339/s).
+[Sat Feb  4 13:25:49 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:25:52 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 13:25:52 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 13:25:52 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 13:25:53 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 13:25:53 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 13:25:53 2012] [debug] HASH(0x3bcc96b4)  (0.641743s, 1.558/s).
+[Sat Feb  4 13:25:58 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:34:41 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:37:20 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:38:27 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:39:05 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:39:24 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:39:43 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:39:47 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:41:20 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:41:42 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:41:53 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:42:01 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:42:33 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:42:47 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 13:42:54 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 14:02:31 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 14:27:22 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 14:27:22 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Sat Feb  4 14:27:22 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 14:27:23 2012] [error] syntax error at script/../lib/Compare/Main.pm line 63, near "$osubs module_subs"
+syntax error at script/../lib/Compare/Main.pm line 64, near "$nsubs module_subs"
+Compilation failed in require at (eval 42153) line 1.
+
+[Sat Feb  4 14:27:23 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  4 14:27:23 2012] [debug] Template "exception.html.ep" not found.
+[Sat Feb  4 14:27:23 2012] [debug] Rendering inline template.
+[Sat Feb  4 14:27:23 2012] [debug] Rendering inline template.
+[Sat Feb  4 14:27:23 2012] [debug] 500 Internal Server Error (0.294658s, 3.394/s).
+[Sat Feb  4 17:56:16 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 17:56:16 2012] [info] Server listening (http://*:3000)
+[Sat Feb  4 17:56:41 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 17:57:20 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 17:57:20 2012] [info] Server listening (http://*:3000)
+[Sat Feb  4 17:57:25 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 17:57:25 2012] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sat Feb  4 17:57:25 2012] [debug] Dispatching "Compare::Main->index".
+[Sat Feb  4 17:57:28 2012] [error] Global symbol "$ofile" requires explicit package name at script/../lib/Compare/Auditor.pm line 37.
+Global symbol "$nfile" requires explicit package name at script/../lib/Compare/Auditor.pm line 37.
+syntax error at script/../lib/Compare/Auditor.pm line 59, near "my "
+Global symbol "$found" requires explicit package name at script/../lib/Compare/Auditor.pm line 59.
+Global symbol "$found" requires explicit package name at script/../lib/Compare/Auditor.pm line 66.
+Global symbol "$found" requires explicit package name at script/../lib/Compare/Auditor.pm line 72.
+syntax error at script/../lib/Compare/Auditor.pm line 77, near "->"${codebase}_path""
+Compilation failed in require at script/../lib/Compare/Main.pm line 3.
+BEGIN failed--compilation aborted at script/../lib/Compare/Main.pm line 3.
+Compilation failed in require at (eval 251) line 1.
+
+[Sat Feb  4 17:57:28 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  4 17:57:28 2012] [debug] Template "exception.html.ep" not found.
+[Sat Feb  4 17:57:28 2012] [debug] Rendering inline template.
+[Sat Feb  4 17:57:28 2012] [debug] Rendering inline template.
+[Sat Feb  4 17:57:28 2012] [debug] 500 Internal Server Error (3.348097s, 0.299/s).
+[Sat Feb  4 17:58:12 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 17:58:20 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 17:58:20 2012] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sat Feb  4 17:58:20 2012] [debug] Dispatching "Compare::Main->index".
+[Sat Feb  4 17:58:21 2012] [error] syntax error at script/../lib/Compare/Auditor.pm line 58, near "my "
+Global symbol "$found" requires explicit package name at script/../lib/Compare/Auditor.pm line 58.
+Global symbol "$found" requires explicit package name at script/../lib/Compare/Auditor.pm line 65.
+Global symbol "$found" requires explicit package name at script/../lib/Compare/Auditor.pm line 71.
+syntax error at script/../lib/Compare/Auditor.pm line 76, near "->"${codebase}_path""
+Compilation failed in require at script/../lib/Compare/Main.pm line 3.
+BEGIN failed--compilation aborted at script/../lib/Compare/Main.pm line 3.
+Compilation failed in require at (eval 355) line 1.
+
+[Sat Feb  4 17:58:21 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  4 17:58:21 2012] [debug] Template "exception.html.ep" not found.
+[Sat Feb  4 17:58:21 2012] [debug] Rendering inline template.
+[Sat Feb  4 17:58:21 2012] [debug] Rendering inline template.
+[Sat Feb  4 17:58:21 2012] [debug] 500 Internal Server Error (0.654626s, 1.528/s).
+[Sat Feb  4 17:58:38 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 17:58:42 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 17:58:42 2012] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sat Feb  4 17:58:42 2012] [debug] Dispatching "Compare::Main->index".
+[Sat Feb  4 17:58:42 2012] [error] syntax error at script/../lib/Compare/Auditor.pm line 76, near "->"${codebase}_path""
+Compilation failed in require at script/../lib/Compare/Main.pm line 3.
+BEGIN failed--compilation aborted at script/../lib/Compare/Main.pm line 3.
+Compilation failed in require at (eval 405) line 1.
+
+[Sat Feb  4 17:58:42 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  4 17:58:42 2012] [debug] Template "exception.html.ep" not found.
+[Sat Feb  4 17:58:42 2012] [debug] Rendering inline template.
+[Sat Feb  4 17:58:42 2012] [debug] Rendering inline template.
+[Sat Feb  4 17:58:42 2012] [debug] 500 Internal Server Error (0.674000s, 1.484/s).
+[Sat Feb  4 17:59:15 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 17:59:24 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 17:59:28 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 17:59:38 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 17:59:45 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 17:59:45 2012] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sat Feb  4 17:59:45 2012] [debug] Dispatching "Compare::Main->index".
+[Sat Feb  4 17:59:45 2012] [error] Compare/Auditor.pm did not return a true value at script/../lib/Compare/Main.pm line 3.
+BEGIN failed--compilation aborted at script/../lib/Compare/Main.pm line 3.
+Compilation failed in require at (eval 523) line 1.
+
+[Sat Feb  4 17:59:45 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  4 17:59:45 2012] [debug] Template "exception.html.ep" not found.
+[Sat Feb  4 17:59:45 2012] [debug] Rendering inline template.
+[Sat Feb  4 17:59:45 2012] [debug] Rendering inline template.
+[Sat Feb  4 17:59:45 2012] [debug] 500 Internal Server Error (0.676198s, 1.479/s).
+[Sat Feb  4 17:59:56 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 17:59:57 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 17:59:57 2012] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sat Feb  4 17:59:57 2012] [debug] Dispatching "Compare::Main->index".
+[Sat Feb  4 17:59:57 2012] [error] syntax error at script/../lib/Compare/Main.pm line 17, near "->new {"
+Global symbol "$auditor" requires explicit package name at script/../lib/Compare/Main.pm line 23.
+Global symbol "$self" requires explicit package name at script/../lib/Compare/Main.pm line 34.
+Global symbol "$codebases" requires explicit package name at script/../lib/Compare/Main.pm line 35.
+Global symbol "@plugins" requires explicit package name at script/../lib/Compare/Main.pm line 36.
+Global symbol "$status" requires explicit package name at script/../lib/Compare/Main.pm line 37.
+Global symbol "%params" requires explicit package name at script/../lib/Compare/Main.pm line 39.
+syntax error at script/../lib/Compare/Main.pm line 41, near "}"
+Compilation failed in require at (eval 559) line 1.
+
+[Sat Feb  4 17:59:57 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  4 17:59:57 2012] [debug] Template "exception.html.ep" not found.
+[Sat Feb  4 17:59:57 2012] [debug] Rendering inline template.
+[Sat Feb  4 17:59:57 2012] [debug] Rendering inline template.
+[Sat Feb  4 17:59:57 2012] [debug] 500 Internal Server Error (0.685282s, 1.459/s).
+[Sat Feb  4 18:00:25 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 18:00:26 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 18:00:26 2012] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sat Feb  4 18:00:26 2012] [debug] Dispatching "Compare::Main->index".
+[Sat Feb  4 18:00:26 2012] [debug] Action "Compare::Main->index" not found, assuming template without action.
+[Sat Feb  4 18:00:26 2012] [debug] Rendering template "main/index.html.ep".
+[Sat Feb  4 18:00:27 2012] [error] Global symbol "$info" requires explicit package name at template "main/index.html.ep" line 5, near "    <input type="hidden" id="b_label" name="hidden_b_label" value="<%= $info->{b}->{label} %>" />".
+Global symbol "$info" requires explicit package name at template "main/index.html.ep" line 6, near "  ".
+Global symbol "$a_label" requires explicit package name at template "main/index.html.ep" line 10, near "      Path <input type="text" class="path" name="a_path" value="<%= $a_path %>" /> &nbsp;".
+Global symbol "$a_path" requires explicit package name at template "main/index.html.ep" line 11, near "      <strong>New</strong> &nbsp;".
+Global symbol "$b_label" requires explicit package name at template "main/index.html.ep" line 13, near "      Path <input type="text" class="path" name="b_path" value="<%= $b_path %>" /> &nbsp;     ".
+Global symbol "$b_path" requires explicit package name at template "main/index.html.ep" line 14, near "      <br />".
+Global symbol "$plugin_dirs" requires explicit package name at template "main/index.html.ep" line 16, near "      Module <input type="text" class="module" name="module" value="<%= $module %>" /> &nbsp; ".
+Global symbol "$module" requires explicit package name at template "main/index.html.ep" line 17, near "      Method <input type="text" class="method" name="method" value="<%= $method %>" /> &nbsp; ".
+Global symbol "$method" requires explicit package name at template "main/index.html.ep" line 18, near "      <input type="submit" class="submit" value="Go">".
+Global symbol "$info" requires explicit package name at template "main/index.html.ep" line 22, near "    <div id="menu">".
+Global symbol "$info" requires explicit package name at template "main/index.html.ep" line 28, near "          % foreach my $i (0..@{$info->{plugin_dirs}} - 1) {".
+Global symbol "$info" requires explicit package name at template "main/index.html.ep" line 29, near "            % my $dir = $info->{plugin_dirs}->[$i];".
+Global symbol "$info" requires explicit package name at template "main/index.html.ep" line 30, near "            % my $disabled = ($info->{$codebase}->{methods}->{$dir} ? '' : 'disabled');    ".
+Global symbol "$info" requires explicit package name at template "main/index.html.ep" line 31, near "            % (my $id = "${codebase}_$dir") =~ s/\//:/g;".
+Global symbol "$info" requires explicit package name at template "main/index.html.ep" line 33, near "            % my $checked = 'checked' if (($menu == 1 and $codebase eq 'a' and $i == 0) or ($menu == 2 and $codebase eq 'b' and $i == 0));".
+Global symbol "$info" requires explicit package name at template "main/index.html.ep" line 37, near "            </span>".
+1: % layout 'default';
+2: 
+3: <div id="header">
+4:   <form name="settings" method="post" action="/">
+5:     <input type="hidden" id="a_label" name="hidden_a_label" value="<%= $info->{a}->{label} %>" />
+6:     <input type="hidden" id="b_label" name="hidden_b_label" value="<%= $info->{b}->{label} %>" />
+7:   
+8:     <div id="spec">
+9:       <strong>Old</strong> &nbsp;
+10:       Label <input type="text" class="label" name="a_label" value="<%= $a_label %>" /> &nbsp;
+
+[Sat Feb  4 18:00:27 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  4 18:00:27 2012] [debug] Template "exception.html.ep" not found.
+[Sat Feb  4 18:00:27 2012] [debug] Rendering inline template.
+[Sat Feb  4 18:00:27 2012] [debug] Rendering inline template.
+[Sat Feb  4 18:00:27 2012] [debug] 500 Internal Server Error (0.731352s, 1.367/s).
+[Sat Feb  4 18:00:36 2012] [debug] GET /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sat Feb  4 18:00:36 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 18:00:36 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 18:00:36 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 18:00:36 2012] [debug] 200 OK (0.038195s, 26.181/s).
+[Sat Feb  4 18:00:44 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sat Feb  4 18:00:44 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 18:00:44 2012] [error] Can't locate object method "new" via package "Compare::Audit" (perhaps you forgot to load "Compare::Audit"?) at script/../lib/Compare/Main.pm line 17.
+
+[Sat Feb  4 18:00:44 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  4 18:00:44 2012] [debug] Template "exception.html.ep" not found.
+[Sat Feb  4 18:00:44 2012] [debug] Rendering inline template.
+[Sat Feb  4 18:00:44 2012] [debug] Rendering inline template.
+[Sat Feb  4 18:00:44 2012] [debug] 500 Internal Server Error (0.046584s, 21.467/s).
+[Sat Feb  4 18:00:44 2012] [error] Can't locate object method "new" via package "Compare::Audit" (perhaps you forgot to load "Compare::Audit"?) at script/../lib/Compare/Main.pm line 17.
+
+[Sat Feb  4 18:00:55 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 18:00:58 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 18:00:58 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sat Feb  4 18:00:58 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 18:00:59 2012] [error] Can't locate object method "path_for" via package "Compare::Auditor" at script/../lib/Compare/Auditor.pm line 57.
+
+[Sat Feb  4 18:00:59 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  4 18:00:59 2012] [debug] Template "exception.html.ep" not found.
+[Sat Feb  4 18:00:59 2012] [debug] Rendering inline template.
+[Sat Feb  4 18:00:59 2012] [debug] Rendering inline template.
+[Sat Feb  4 18:00:59 2012] [debug] 500 Internal Server Error (0.677406s, 1.476/s).
+[Sat Feb  4 18:00:59 2012] [error] Can't locate object method "path_for" via package "Compare::Auditor" at script/../lib/Compare/Auditor.pm line 57.
+
+[Sat Feb  4 18:01:13 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 18:01:15 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 18:01:15 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sat Feb  4 18:01:15 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 18:01:20 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 18:01:20 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 18:01:20 2012] [debug] HASH(0x977c9ec)  (4.744347s, 0.211/s).
+[Sat Feb  4 18:03:02 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 18:03:50 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 18:04:05 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 18:04:05 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sat Feb  4 18:04:05 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 18:04:06 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 18:04:06 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 18:04:06 2012] [debug] HASH(0xa280a7c)  (1.045611s, 0.956/s).
+[Sat Feb  4 18:04:22 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 18:04:30 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 18:04:47 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 18:04:57 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 18:06:00 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 18:06:57 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 18:07:17 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 18:10:01 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 18:10:05 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 18:12:07 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 18:12:07 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sat Feb  4 18:12:07 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 18:12:07 2012] [error] Global symbol "$state" requires explicit package name at script/../lib/Compare/Auditor.pm line 94.
+Compilation failed in require at script/../lib/Compare/Main.pm line 3.
+BEGIN failed--compilation aborted at script/../lib/Compare/Main.pm line 3.
+Compilation failed in require at (eval 1759) line 1.
+
+[Sat Feb  4 18:12:07 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  4 18:12:07 2012] [debug] Template "exception.html.ep" not found.
+[Sat Feb  4 18:12:07 2012] [debug] Rendering inline template.
+[Sat Feb  4 18:12:07 2012] [debug] Rendering inline template.
+[Sat Feb  4 18:12:07 2012] [debug] 500 Internal Server Error (0.717848s, 1.393/s).
+[Sat Feb  4 18:12:25 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sat Feb  4 18:12:28 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  4 18:12:28 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sat Feb  4 18:12:28 2012] [debug] Dispatching "Compare::Main->audit".
+[Sat Feb  4 18:12:29 2012] [debug] Rendering template "main/audit.html.ep".
+[Sat Feb  4 18:12:29 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  4 18:12:29 2012] [debug] HASH(0xc865bd4)  (1.059430s, 0.944/s).
+[Sun Feb  5 10:25:57 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:25:57 2012] [info] Server listening (http://*:3000)
+[Sun Feb  5 10:26:18 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 10:26:18 2012] [debug] GET /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 10:26:18 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 10:26:22 2012] [debug] Rendering template "main/audit.html.ep".
+[Sun Feb  5 10:26:22 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  5 10:26:22 2012] [debug] 200 OK (3.128686s, 0.320/s).
+[Sun Feb  5 10:26:30 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 10:26:30 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 10:26:35 2012] [debug] HASH(0x3aef65c)  (4.129989s, 0.242/s).
+[Sun Feb  5 10:27:09 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:28:05 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:28:07 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:29:07 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:33:54 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:33:58 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:34:17 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:36:23 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:36:33 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:36:48 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:36:52 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:37:02 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:37:11 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:37:41 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:37:49 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:37:59 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:38:02 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:38:19 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:38:51 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:39:01 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:39:06 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:39:24 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 10:39:24 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 10:39:24 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 10:39:25 2012] [error] Global symbol "$modules" requires explicit package name at script/../lib/Compare/Auditor.pm line 61.
+Compilation failed in require at script/../lib/Compare/Main.pm line 3.
+BEGIN failed--compilation aborted at script/../lib/Compare/Main.pm line 3.
+Compilation failed in require at (eval 1805) line 1.
+
+[Sun Feb  5 10:39:25 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Feb  5 10:39:25 2012] [debug] Template "exception.html.ep" not found.
+[Sun Feb  5 10:39:25 2012] [debug] Rendering inline template.
+[Sun Feb  5 10:39:25 2012] [debug] Rendering inline template.
+[Sun Feb  5 10:39:25 2012] [debug] 500 Internal Server Error (0.659116s, 1.517/s).
+[Sun Feb  5 10:39:46 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:40:06 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:40:08 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:40:14 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 10:40:14 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 10:40:14 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 10:40:15 2012] [debug] Rendering template "main/audit.html.ep".
+[Sun Feb  5 10:40:15 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  5 10:40:15 2012] [debug] HASH(0x9cc4e2c)  (0.677770s, 1.475/s).
+[Sun Feb  5 10:40:28 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:40:31 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 10:40:31 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 10:40:31 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 10:40:32 2012] [debug] Rendering template "main/audit.html.ep".
+[Sun Feb  5 10:40:32 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  5 10:40:32 2012] [debug] HASH(0xa530b54)  (1.021166s, 0.979/s).
+[Sun Feb  5 10:40:45 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:41:03 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:41:17 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 10:41:17 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 10:41:17 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 10:41:18 2012] [debug] Rendering template "main/audit.html.ep".
+[Sun Feb  5 10:41:18 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  5 10:41:18 2012] [debug] HASH(0xb0829e4)  (1.035926s, 0.965/s).
+[Sun Feb  5 10:41:43 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:42:24 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:42:43 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 10:42:51 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 10:42:51 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 10:42:51 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 10:42:52 2012] [debug] Rendering template "main/audit.html.ep".
+[Sun Feb  5 10:42:52 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  5 10:42:52 2012] [debug] HASH(0xbe7dd2c)  (1.026263s, 0.974/s).
+[Sun Feb  5 11:56:09 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 11:56:09 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 11:56:09 2012] [debug] HASH(0xb6eb49c)  (0.404729s, 2.471/s).
+[Sun Feb  5 12:15:52 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 12:16:27 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 12:17:01 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 12:17:32 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 12:18:22 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 12:18:44 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 12:19:03 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 12:19:30 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 12:19:42 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 12:20:10 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 12:20:37 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 12:20:47 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 12:20:53 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 12:21:21 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 12:22:46 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 12:23:16 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 12:23:42 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 12:24:15 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 12:24:31 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 12:25:46 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 12:26:32 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 12:26:51 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 12:27:22 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 12:28:00 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:06:57 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:08:32 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:08:40 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:08:50 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:09:03 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:09:46 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:09:55 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:10:01 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:16:07 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:17:10 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:17:56 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:18:15 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:18:22 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:18:35 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:18:52 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:18:56 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:19:03 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:19:21 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:19:29 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:19:36 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:19:44 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:27:58 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:29:32 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:29:43 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:30:51 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:31:47 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:32:23 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:32:37 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:33:32 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:33:39 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:34:44 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:35:08 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:35:12 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:35:40 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:36:01 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:36:15 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:36:23 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:36:41 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:36:54 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:37:14 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:37:27 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:37:43 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:37:53 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:37:57 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:38:01 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:38:25 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:38:43 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:39:22 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:39:36 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:39:43 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:41:42 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:51:00 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:51:05 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:51:33 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:51:34 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 13:51:34 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 13:51:34 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 13:51:34 2012] [error] Global symbol "%uniq_methods" requires explicit package name at script/../lib/Compare/Auditor.pm line 38.
+Global symbol "$methods" requires explicit package name at script/../lib/Compare/Auditor.pm line 38.
+Type of arg 1 to keys must be hash or array (not private variable) at script/../lib/Compare/Auditor.pm line 48, near "$uniq_methods]"
+Compilation failed in require at script/../lib/Compare/Main.pm line 3.
+BEGIN failed--compilation aborted at script/../lib/Compare/Main.pm line 3.
+Compilation failed in require at (eval 24597) line 1.
+
+[Sun Feb  5 13:51:34 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Feb  5 13:51:34 2012] [debug] Template "exception.html.ep" not found.
+[Sun Feb  5 13:51:34 2012] [debug] Rendering inline template.
+[Sun Feb  5 13:51:34 2012] [debug] Rendering inline template.
+[Sun Feb  5 13:51:34 2012] [debug] 500 Internal Server Error (0.701858s, 1.425/s).
+[Sun Feb  5 13:51:49 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:51:56 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 13:51:56 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 13:51:56 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 13:51:56 2012] [error] Global symbol "$methods" requires explicit package name at script/../lib/Compare/Auditor.pm line 38.
+Global symbol "$uniq_methods" requires explicit package name at script/../lib/Compare/Auditor.pm line 48.
+Type of arg 1 to keys must be hash or array (not scalar dereference) at script/../lib/Compare/Auditor.pm line 48, near "$uniq_methods]"
+Compilation failed in require at script/../lib/Compare/Main.pm line 3.
+BEGIN failed--compilation aborted at script/../lib/Compare/Main.pm line 3.
+Compilation failed in require at (eval 24629) line 1.
+
+[Sun Feb  5 13:51:56 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Feb  5 13:51:56 2012] [debug] Template "exception.html.ep" not found.
+[Sun Feb  5 13:51:56 2012] [debug] Rendering inline template.
+[Sun Feb  5 13:51:56 2012] [debug] Rendering inline template.
+[Sun Feb  5 13:51:56 2012] [debug] 500 Internal Server Error (0.677979s, 1.475/s).
+[Sun Feb  5 13:52:18 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:52:26 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 13:52:26 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 13:52:26 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 13:52:26 2012] [error] Global symbol "$uniq_methods" requires explicit package name at script/../lib/Compare/Auditor.pm line 48.
+Type of arg 1 to keys must be hash or array (not scalar dereference) at script/../lib/Compare/Auditor.pm line 48, near "$uniq_methods]"
+Compilation failed in require at script/../lib/Compare/Main.pm line 3.
+BEGIN failed--compilation aborted at script/../lib/Compare/Main.pm line 3.
+Compilation failed in require at (eval 24687) line 1.
+
+[Sun Feb  5 13:52:26 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Feb  5 13:52:26 2012] [debug] Template "exception.html.ep" not found.
+[Sun Feb  5 13:52:26 2012] [debug] Rendering inline template.
+[Sun Feb  5 13:52:26 2012] [debug] Rendering inline template.
+[Sun Feb  5 13:52:26 2012] [debug] 500 Internal Server Error (0.680637s, 1.469/s).
+[Sun Feb  5 13:52:40 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:52:44 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 13:52:44 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 13:52:44 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 13:52:45 2012] [error] Global symbol "$audit" requires explicit package name at script/../lib/Compare/Main.pm line 23.
+Global symbol "$audit" requires explicit package name at script/../lib/Compare/Main.pm line 37.
+Compilation failed in require at (eval 24731) line 1.
+
+[Sun Feb  5 13:52:45 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Feb  5 13:52:45 2012] [debug] Template "exception.html.ep" not found.
+[Sun Feb  5 13:52:45 2012] [debug] Rendering inline template.
+[Sun Feb  5 13:52:45 2012] [debug] Rendering inline template.
+[Sun Feb  5 13:52:45 2012] [debug] 500 Internal Server Error (0.688949s, 1.451/s).
+[Sun Feb  5 13:53:04 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:53:07 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 13:53:07 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 13:53:07 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 13:53:07 2012] [error] PPI could not open file '':  at script/../lib/Compare/Auditor.pm line 117.
+
+[Sun Feb  5 13:53:07 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Feb  5 13:53:07 2012] [debug] Template "exception.html.ep" not found.
+[Sun Feb  5 13:53:07 2012] [debug] Rendering inline template.
+[Sun Feb  5 13:53:07 2012] [debug] Rendering inline template.
+[Sun Feb  5 13:53:07 2012] [debug] 500 Internal Server Error (0.720633s, 1.388/s).
+[Sun Feb  5 13:53:07 2012] [error] PPI could not open file '':  at script/../lib/Compare/Auditor.pm line 117.
+
+[Sun Feb  5 13:55:50 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:55:58 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 13:56:03 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 13:56:03 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 13:56:03 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 13:56:03 2012] [error] PPI could not open file '':  at script/../lib/Compare/Auditor.pm line 118
+	Compare::Auditor::_parse_subs('Compare::Auditor=HASH(0x1c6c1474)', 'C:/dev/codebases/11-64/eg-plugins/common/modules/Bio/AlignIO/...', undef) called at script/../lib/Compare/Auditor.pm line 101
+	Compare::Auditor::module_methods('Compare::Auditor=HASH(0x1c6c1474)', 'eg-plugins/common', 'Bio/AlignIO/msf.pm') called at script/../lib/Compare/Auditor.pm line 38
+	Compare::Auditor::audit('Compare::Auditor=HASH(0x1c6c1474)') called at script/../lib/Compare/Main.pm line 23
+	Compare::Main::audit('Compare::Main=HASH(0x1c033254)') called at C:/strawberry/perl/site/bin/../lib/Mojolicious/Routes.pm line 397
+	eval {...} called at C:/strawberry/perl/site/bin/../lib/Mojolicious/Routes.pm line 387
+	Mojolicious::Routes::_dispatch_controller('Mojolicious::Routes=HASH(0x1bf0dd54)', 'Mojolicious::Controller=HASH(0x1c02fa54)', 'HASH(0x1c032d6c)', 0) called at C:/strawberry/perl/site/bin/../lib/Mojolicious/Routes.pm line 555
+	Mojolicious::Routes::_walk_stack('Mojolicious::Routes=HASH(0x1bf0dd54)', 'Mojolicious::Controller=HASH(0x1c02fa54)') called at C:/strawberry/perl/site/bin/../lib/Mojolicious/Routes.pm line 143
+	Mojolicious::Routes::dispatch('Mojolicious::Routes=HASH(0x1bf0dd54)', 'Mojolicious::Controller=HASH(0x1c02fa54)') called at C:/strawberry/perl/site/bin/../lib/Mojolicious.pm line 151
+	Mojolicious::dispatch('Compare=HASH(0x302fcd4)', 'Mojolicious::Controller=HASH(0x1c02fa54)') called at C:/strawberry/perl/site/bin/../lib/Mojolicious.pm line 221
+	Mojolicious::__ANON__('Compare=HASH(0x302fcd4)', 'Mojolicious::Controller=HASH(0x1c02fa54)') called at C:/strawberry/perl/site/bin/../lib/Mojolicious.pm line 183
+	Mojolicious::__ANON__('CODE(0x1c02fbc4)', 'Mojolicious::Controller=HASH(0x1c02fa54)') called at C:/strawberry/perl/site/bin/../lib/Mojolicious/Plugins.pm line 30
+	Mojolicious::Plugins::__ANON__() called at C:/strawberry/perl/site/bin/../lib/Mojolicious/Plugins.pm line 33
+	Mojolicious::Plugins::emit_chain('Mojolicious::Plugins=HASH(0x1bf1009c)', 'around_dispatch', 'Mojolicious::Controller=HASH(0x1c02fa54)') called at C:/strawberry/perl/site/bin/../lib/Mojolicious.pm line 190
+	eval {...} called at C:/strawberry/perl/site/bin/../lib/Mojolicious.pm line 190
+	Mojolicious::handler('Compare=HASH(0x302fcd4)', 'Mojo::Transaction::HTTP=HASH(0x1c02d6a4)') called at C:/strawberry/perl/site/bin/../lib/Mojo/Server.pm line 20
+	Mojo::Server::__ANON__('Mojo::Server::Daemon=HASH(0x302bae4)', 'Mojo::Transaction::HTTP=HASH(0x1c02d6a4)') called at C:/strawberry/perl/site/bin/../lib/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Server::Daemon=HASH(0x302bae4)', 'request', 'Mojo::Transaction::HTTP=HASH(0x1c02d6a4)') called at C:/strawberry/perl/site/bin/../lib/Mojo/Server/Daemon.pm line 111
+	Mojo::Server::Daemon::__ANON__('Mojo::Transaction::HTTP=HASH(0x1c02d6a4)') called at C:/strawberry/perl/site/bin/../lib/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Transaction::HTTP=HASH(0x1c02d6a4)', 'request') called at C:/strawberry/perl/site/bin/../lib/Mojo/Transaction/HTTP.pm line 125
+	Mojo::Transaction::HTTP::server_read('Mojo::Transaction::HTTP=HASH(0x1c02d6a4)', 'POST /audit HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Mozil...') called at C:/strawberry/perl/site/bin/../lib/Mojo/Server/Daemon.pm line 274
+	Mojo::Server::Daemon::_read('Mojo::Server::Daemon=HASH(0x302bae4)', 'b002ff572f68c35e170a1b85eb3ec70a', 'POST /audit HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Mozil...') called at C:/strawberry/perl/site/bin/../lib/Mojo/Server/Daemon.pm line 239
+	Mojo::Server::Daemon::__ANON__('Mojo::IOLoop::Stream=HASH(0x1c02d9d4)') called at C:/strawberry/perl/site/bin/../lib/Mojo/EventEmitter.pm line 31
+	eval {...} called at C:/strawberry/perl/site/bin/../lib/Mojo/EventEmitter.pm line 31
+	Mojo::EventEmitter::emit_safe('Mojo::IOLoop::Stream=HASH(0x1c02d9d4)', 'read', 'POST /audit HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Mozil...') called at C:/strawberry/perl/site/bin/../lib/Mojo/IOLoop/Stream.pm line 128
+	Mojo::IOLoop::Stream::_read('Mojo::IOLoop::Stream=HASH(0x1c02d9d4)') called at C:/strawberry/perl/site/bin/../lib/Mojo/IOLoop/Stream.pm line 73
+	Mojo::IOLoop::Stream::__ANON__('Mojo::IOWatcher=HASH(0x1c0271d4)', 'IO::Socket::INET=GLOB(0x1c02d854)') called at C:/strawberry/perl/site/bin/../lib/Mojo/IOWatcher.pm line 128
+	eval {...} called at C:/strawberry/perl/site/bin/../lib/Mojo/IOWatcher.pm line 128
+	Mojo::IOWatcher::_sandbox('Mojo::IOWatcher=HASH(0x1c0271d4)', 'Read', 'CODE(0x1c02e60c)', 'IO::Socket::INET=GLOB(0x1c02d854)') called at C:/strawberry/perl/site/bin/../lib/Mojo/IOWatcher.pm line 95
+	Mojo::IOWatcher::_one_tick('Mojo::IOWatcher=HASH(0x1c0271d4)') called at C:/strawberry/perl/site/bin/../lib/Mojo/IOWatcher.pm line 61
+	Mojo::IOWatcher::start('Mojo::IOWatcher=HASH(0x1c0271d4)') called at C:/strawberry/perl/site/bin/../lib/Mojo/IOLoop.pm line 315
+	Mojo::IOLoop::start('Mojo::IOLoop=HASH(0x302f034)') called at C:/strawberry/perl/site/bin/../lib/Mojo/Server/Morbo.pm line 122
+	Mojo::Server::Morbo::_spawn() called at C:/strawberry/perl/site/bin/../lib/Mojo/Server/Morbo.pm line 83
+	Mojo::Server::Morbo::_manage() called at C:/strawberry/perl/site/bin/../lib/Mojo/Server/Morbo.pm line 47
+	Mojo::Server::Morbo::run('Mojo::Server::Morbo=HASH(0x264c784)', 'script\compare') called at C:\strawberry\perl\site\bin/morbo line 61
+
+[Sun Feb  5 13:56:03 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Feb  5 13:56:03 2012] [debug] Template "exception.html.ep" not found.
+[Sun Feb  5 13:56:03 2012] [debug] Rendering inline template.
+[Sun Feb  5 13:56:04 2012] [debug] Rendering inline template.
+[Sun Feb  5 13:56:04 2012] [debug] 500 Internal Server Error (0.737236s, 1.356/s).
+[Sun Feb  5 13:56:04 2012] [error] PPI could not open file '':  at script/../lib/Compare/Auditor.pm line 118
+	Compare::Auditor::_parse_subs('Compare::Auditor=HASH(0x1c6c1474)', 'C:/dev/codebases/11-64/eg-plugins/common/modules/Bio/AlignIO/...', undef) called at script/../lib/Compare/Auditor.pm line 101
+	Compare::Auditor::module_methods('Compare::Auditor=HASH(0x1c6c1474)', 'eg-plugins/common', 'Bio/AlignIO/msf.pm') called at script/../lib/Compare/Auditor.pm line 38
+	Compare::Auditor::audit('Compare::Auditor=HASH(0x1c6c1474)') called at script/../lib/Compare/Main.pm line 23
+	Compare::Main::audit('Compare::Main=HASH(0x1c033254)') called at C:/strawberry/perl/site/bin/../lib/Mojolicious/Routes.pm line 397
+	eval {...} called at C:/strawberry/perl/site/bin/../lib/Mojolicious/Routes.pm line 387
+	Mojolicious::Routes::_dispatch_controller('Mojolicious::Routes=HASH(0x1bf0dd54)', 'Mojolicious::Controller=HASH(0x1c02fa54)', 'HASH(0x1c032d6c)', 0) called at C:/strawberry/perl/site/bin/../lib/Mojolicious/Routes.pm line 555
+	Mojolicious::Routes::_walk_stack('Mojolicious::Routes=HASH(0x1bf0dd54)', 'Mojolicious::Controller=HASH(0x1c02fa54)') called at C:/strawberry/perl/site/bin/../lib/Mojolicious/Routes.pm line 143
+	Mojolicious::Routes::dispatch('Mojolicious::Routes=HASH(0x1bf0dd54)', 'Mojolicious::Controller=HASH(0x1c02fa54)') called at C:/strawberry/perl/site/bin/../lib/Mojolicious.pm line 151
+	Mojolicious::dispatch('Compare=HASH(0x302fcd4)', 'Mojolicious::Controller=HASH(0x1c02fa54)') called at C:/strawberry/perl/site/bin/../lib/Mojolicious.pm line 221
+	Mojolicious::__ANON__('Compare=HASH(0x302fcd4)', 'Mojolicious::Controller=HASH(0x1c02fa54)') called at C:/strawberry/perl/site/bin/../lib/Mojolicious.pm line 183
+	Mojolicious::__ANON__('CODE(0x1c02fbc4)', 'Mojolicious::Controller=HASH(0x1c02fa54)') called at C:/strawberry/perl/site/bin/../lib/Mojolicious/Plugins.pm line 30
+	Mojolicious::Plugins::__ANON__() called at C:/strawberry/perl/site/bin/../lib/Mojolicious/Plugins.pm line 33
+	Mojolicious::Plugins::emit_chain('Mojolicious::Plugins=HASH(0x1bf1009c)', 'around_dispatch', 'Mojolicious::Controller=HASH(0x1c02fa54)') called at C:/strawberry/perl/site/bin/../lib/Mojolicious.pm line 190
+	eval {...} called at C:/strawberry/perl/site/bin/../lib/Mojolicious.pm line 190
+	Mojolicious::handler('Compare=HASH(0x302fcd4)', 'Mojo::Transaction::HTTP=HASH(0x1c02d6a4)') called at C:/strawberry/perl/site/bin/../lib/Mojo/Server.pm line 20
+	Mojo::Server::__ANON__('Mojo::Server::Daemon=HASH(0x302bae4)', 'Mojo::Transaction::HTTP=HASH(0x1c02d6a4)') called at C:/strawberry/perl/site/bin/../lib/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Server::Daemon=HASH(0x302bae4)', 'request', 'Mojo::Transaction::HTTP=HASH(0x1c02d6a4)') called at C:/strawberry/perl/site/bin/../lib/Mojo/Server/Daemon.pm line 111
+	Mojo::Server::Daemon::__ANON__('Mojo::Transaction::HTTP=HASH(0x1c02d6a4)') called at C:/strawberry/perl/site/bin/../lib/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Transaction::HTTP=HASH(0x1c02d6a4)', 'request') called at C:/strawberry/perl/site/bin/../lib/Mojo/Transaction/HTTP.pm line 125
+	Mojo::Transaction::HTTP::server_read('Mojo::Transaction::HTTP=HASH(0x1c02d6a4)', 'POST /audit HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Mozil...') called at C:/strawberry/perl/site/bin/../lib/Mojo/Server/Daemon.pm line 274
+	Mojo::Server::Daemon::_read('Mojo::Server::Daemon=HASH(0x302bae4)', 'b002ff572f68c35e170a1b85eb3ec70a', 'POST /audit HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Mozil...') called at C:/strawberry/perl/site/bin/../lib/Mojo/Server/Daemon.pm line 239
+	Mojo::Server::Daemon::__ANON__('Mojo::IOLoop::Stream=HASH(0x1c02d9d4)') called at C:/strawberry/perl/site/bin/../lib/Mojo/EventEmitter.pm line 31
+	eval {...} called at C:/strawberry/perl/site/bin/../lib/Mojo/EventEmitter.pm line 31
+	Mojo::EventEmitter::emit_safe('Mojo::IOLoop::Stream=HASH(0x1c02d9d4)', 'read', 'POST /audit HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Mozil...') called at C:/strawberry/perl/site/bin/../lib/Mojo/IOLoop/Stream.pm line 128
+	Mojo::IOLoop::Stream::_read('Mojo::IOLoop::Stream=HASH(0x1c02d9d4)') called at C:/strawberry/perl/site/bin/../lib/Mojo/IOLoop/Stream.pm line 73
+	Mojo::IOLoop::Stream::__ANON__('Mojo::IOWatcher=HASH(0x1c0271d4)', 'IO::Socket::INET=GLOB(0x1c02d854)') called at C:/strawberry/perl/site/bin/../lib/Mojo/IOWatcher.pm line 128
+	eval {...} called at C:/strawberry/perl/site/bin/../lib/Mojo/IOWatcher.pm line 128
+	Mojo::IOWatcher::_sandbox('Mojo::IOWatcher=HASH(0x1c0271d4)', 'Read', 'CODE(0x1c02e60c)', 'IO::Socket::INET=GLOB(0x1c02d854)') called at C:/strawberry/perl/site/bin/../lib/Mojo/IOWatcher.pm line 95
+	Mojo::IOWatcher::_one_tick('Mojo::IOWatcher=HASH(0x1c0271d4)') called at C:/strawberry/perl/site/bin/../lib/Mojo/IOWatcher.pm line 61
+	Mojo::IOWatcher::start('Mojo::IOWatcher=HASH(0x1c0271d4)') called at C:/strawberry/perl/site/bin/../lib/Mojo/IOLoop.pm line 315
+	Mojo::IOLoop::start('Mojo::IOLoop=HASH(0x302f034)') called at C:/strawberry/perl/site/bin/../lib/Mojo/Server/Morbo.pm line 122
+	Mojo::Server::Morbo::_spawn() called at C:/strawberry/perl/site/bin/../lib/Mojo/Server/Morbo.pm line 83
+	Mojo::Server::Morbo::_manage() called at C:/strawberry/perl/site/bin/../lib/Mojo/Server/Morbo.pm line 47
+	Mojo::Server::Morbo::run('Mojo::Server::Morbo=HASH(0x264c784)', 'script\compare') called at C:\strawberry\perl\site\bin/morbo line 61
+
+[Sun Feb  5 14:16:31 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:16:42 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:17:29 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:17:35 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 14:17:35 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 14:17:35 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 14:17:36 2012] [debug] Rendering template "main/audit.html.ep".
+[Sun Feb  5 14:17:36 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  5 14:17:36 2012] [debug] 200 OK (1.182919s, 0.845/s).
+[Sun Feb  5 14:18:20 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:18:28 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:18:36 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 14:18:36 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 14:18:36 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 14:18:37 2012] [debug] Rendering template "main/audit.html.ep".
+[Sun Feb  5 14:18:37 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  5 14:18:37 2012] [debug] 200 OK (1.071769s, 0.933/s).
+[Sun Feb  5 14:20:24 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:22:38 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:22:42 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:23:31 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:23:56 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:24:10 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:24:31 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:25:42 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:26:37 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:26:44 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:27:29 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:27:43 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:27:57 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 14:27:57 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 14:27:57 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 14:27:58 2012] [debug] Rendering template "main/audit.html.ep".
+[Sun Feb  5 14:27:58 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  5 14:27:58 2012] [debug] 200 OK (1.049440s, 0.953/s).
+[Sun Feb  5 14:32:41 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:32:43 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 14:32:43 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 14:32:43 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 14:32:44 2012] [debug] Rendering template "main/audit.html.ep".
+[Sun Feb  5 14:32:44 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  5 14:32:44 2012] [debug] 200 OK (1.071880s, 0.933/s).
+[Sun Feb  5 14:33:48 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:34:02 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:34:08 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 14:34:08 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 14:34:08 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 14:34:09 2012] [debug] Rendering template "main/audit.html.ep".
+[Sun Feb  5 14:34:09 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  5 14:34:09 2012] [debug] 200 OK (1.057177s, 0.946/s).
+[Sun Feb  5 14:35:13 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:35:15 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 14:35:15 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 14:35:15 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 14:35:16 2012] [debug] Rendering template "main/audit.html.ep".
+[Sun Feb  5 14:35:16 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  5 14:35:16 2012] [debug] 200 OK (1.303736s, 0.767/s).
+[Sun Feb  5 14:35:44 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 14:35:44 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 14:35:44 2012] [debug] 200 OK (0.433828s, 2.305/s).
+[Sun Feb  5 14:37:29 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:37:31 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 14:37:31 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 14:37:31 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 14:37:33 2012] [debug] Rendering template "main/audit.html.ep".
+[Sun Feb  5 14:37:33 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  5 14:37:33 2012] [debug] 200 OK (1.941873s, 0.515/s).
+[Sun Feb  5 14:37:48 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:37:52 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 14:37:52 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 14:37:52 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 14:37:53 2012] [error] Not an ARRAY reference at script/../lib/Compare/Auditor.pm line 103.
+
+[Sun Feb  5 14:37:53 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Feb  5 14:37:53 2012] [debug] Template "exception.html.ep" not found.
+[Sun Feb  5 14:37:53 2012] [debug] Rendering inline template.
+[Sun Feb  5 14:37:53 2012] [debug] Rendering inline template.
+[Sun Feb  5 14:37:53 2012] [debug] 500 Internal Server Error (0.959055s, 1.043/s).
+[Sun Feb  5 14:37:53 2012] [error] Not an ARRAY reference at script/../lib/Compare/Auditor.pm line 103.
+
+[Sun Feb  5 14:38:18 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:38:20 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 14:38:20 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 14:38:20 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 14:38:21 2012] [error] Not an ARRAY reference at script/../lib/Compare/Auditor.pm line 103.
+
+[Sun Feb  5 14:38:21 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Feb  5 14:38:21 2012] [debug] Template "exception.html.ep" not found.
+[Sun Feb  5 14:38:21 2012] [debug] Rendering inline template.
+[Sun Feb  5 14:38:21 2012] [debug] Rendering inline template.
+[Sun Feb  5 14:38:21 2012] [debug] 500 Internal Server Error (0.979022s, 1.021/s).
+[Sun Feb  5 14:38:21 2012] [error] Not an ARRAY reference at script/../lib/Compare/Auditor.pm line 103.
+
+[Sun Feb  5 14:38:39 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:38:58 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:39:02 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:39:06 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:39:07 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 14:39:07 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 14:39:07 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 14:40:11 2012] [debug] Rendering template "main/audit.html.ep".
+[Sun Feb  5 14:40:12 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  5 14:40:12 2012] [debug] 200 OK (64.827962s, 0.015/s).
+[Sun Feb  5 14:45:16 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:45:19 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 14:45:19 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 14:45:19 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 14:46:23 2012] [debug] Rendering template "main/audit.html.ep".
+[Sun Feb  5 14:46:23 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  5 14:46:23 2012] [debug] 200 OK (63.791648s, 0.016/s).
+[Sun Feb  5 14:59:44 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:59:48 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 14:59:49 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 14:59:50 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 14:59:50 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 15:00:54 2012] [debug] Rendering template "main/audit.html.ep".
+[Sun Feb  5 15:00:54 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  5 15:00:54 2012] [debug] 200 OK (64.711233s, 0.015/s).
+[Sun Feb  5 15:08:10 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 15:09:06 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 15:09:13 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 15:09:23 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 15:09:30 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 15:09:34 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 15:09:40 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 15:10:50 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 15:10:58 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 15:11:08 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 15:11:13 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 15:11:30 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 15:11:44 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 15:11:51 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 15:12:18 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 15:12:23 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 15:12:37 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 15:13:32 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 15:13:32 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 15:13:32 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 15:13:33 2012] [error] Global symbol "%uniq_methods" requires explicit package name at script/../lib/Compare/Auditor.pm line 51.
+Compilation failed in require at script/../lib/Compare/Main.pm line 3.
+BEGIN failed--compilation aborted at script/../lib/Compare/Main.pm line 3.
+Compilation failed in require at (eval 34235) line 1.
+
+[Sun Feb  5 15:13:33 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Feb  5 15:13:33 2012] [debug] Template "exception.html.ep" not found.
+[Sun Feb  5 15:13:33 2012] [debug] Rendering inline template.
+[Sun Feb  5 15:13:33 2012] [debug] Rendering inline template.
+[Sun Feb  5 15:13:33 2012] [debug] 500 Internal Server Error (0.683075s, 1.464/s).
+[Sun Feb  5 15:13:58 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 15:14:09 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 15:14:09 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 15:14:09 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 15:15:14 2012] [debug] Rendering template "main/audit.html.ep".
+[Sun Feb  5 15:15:14 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  5 15:15:14 2012] [debug] 200 OK (65.499299s, 0.015/s).
+[Sun Feb  5 15:39:56 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 15:40:04 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 15:40:29 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 15:40:33 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 15:40:39 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 15:40:39 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 15:40:39 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 15:41:42 2012] [debug] Rendering template "main/audit.html.ep".
+[Sun Feb  5 15:41:42 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  5 15:41:42 2012] [debug] 200 OK (63.895101s, 0.016/s).
+[Sun Feb  5 15:57:33 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 15:57:33 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 15:58:38 2012] [debug] 200 OK (65.346605s, 0.015/s).
+[Sun Feb  5 16:01:31 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 16:01:36 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 16:01:36 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 16:01:36 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 16:02:46 2012] [debug] Rendering template "main/audit.html.ep".
+[Sun Feb  5 16:02:46 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  5 16:02:46 2012] [debug] 200 OK (69.259274s, 0.014/s).
+[Sun Feb  5 16:07:15 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 16:07:15 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 16:08:22 2012] [debug] 200 OK (66.151838s, 0.015/s).
+[Sun Feb  5 16:20:52 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 16:20:59 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 16:22:09 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 16:22:32 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 16:22:43 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 16:23:09 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 16:23:09 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 16:23:09 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 16:24:18 2012] [debug] Rendering template "main/audit.html.ep".
+[Sun Feb  5 16:24:18 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  5 16:24:18 2012] [debug] 200 OK (69.498794s, 0.014/s).
+[Sun Feb  5 18:00:30 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 18:00:38 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 18:00:43 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 18:00:43 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 18:00:43 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 18:01:47 2012] [debug] Rendering template "main/audit.html.ep".
+[Sun Feb  5 18:01:47 2012] [error] Global symbol "$plugin" requires explicit package name at template "main/audit.html.ep" line 28, near "    <tr class="method">".
+23:       % foreach my $plugin ('ensembl', @$plugins) {
+24:       <td class="plugin"><%= $plugin %></td>
+25:       % }
+26:     </tr>
+27:       % foreach my $method (sort keys %{$audit->{$module}->{'/'}->{methods}}) {
+28:         % next if $audit->{$module}->{$plugin}->{methods}->{$method} eq 'same';
+29:     <tr class="method">
+30:       <td class="method"><%== $method %></td>
+31:         % foreach my $plugin ('/', @$plugins) {
+32:         %   my $status = $audit->{$module}->{$plugin}->{methods}->{$method}; 
+33:       <td class="<%= $status %>"><span><%== $module_key->{$status} %></span></td>
+
+[Sun Feb  5 18:01:47 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Feb  5 18:01:47 2012] [debug] Template "exception.html.ep" not found.
+[Sun Feb  5 18:01:47 2012] [debug] Rendering inline template.
+[Sun Feb  5 18:01:47 2012] [debug] Rendering inline template.
+[Sun Feb  5 18:01:47 2012] [debug] 500 Internal Server Error (63.916711s, 0.016/s).
+[Sun Feb  5 18:02:10 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 18:02:12 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 18:02:12 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 18:02:12 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 18:03:17 2012] [debug] Rendering template "main/audit.html.ep".
+[Sun Feb  5 18:03:17 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  5 18:03:17 2012] [debug] 200 OK (64.269472s, 0.016/s).
+[Sun Feb  5 18:04:29 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb  5 18:04:52 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  5 18:04:52 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 18:04:52 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 18:05:56 2012] [debug] Rendering template "main/audit.html.ep".
+[Sun Feb  5 18:05:57 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  5 18:05:57 2012] [debug] 200 OK (64.614683s, 0.015/s).
+[Sun Feb  5 18:07:11 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 18:07:11 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 18:08:16 2012] [debug] 200 OK (65.223561s, 0.015/s).
+[Sun Feb  5 18:23:25 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 18:23:25 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb  5 18:23:25 2012] [debug] 200 OK (0.087257s, 11.460/s).
+[Sun Feb  5 18:23:38 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb  5 18:23:38 2012] [debug] Dispatching "Compare::Main->audit".
