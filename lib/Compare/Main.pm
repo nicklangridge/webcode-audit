@@ -11,7 +11,9 @@ sub audit {
   my $new_path     = $codebases->{$params{new_codebase}};
   my @plugins      = split /[\s,]+/, $params{plugin_dirs};
   my $audit;
-
+  
+  my $t = time;
+  
   if ($old_path and $new_path) {
 
     my $auditor = Compare::Auditor->new(
@@ -23,19 +25,11 @@ sub audit {
     $audit = $auditor->audit;
   }
 
-  my $module_key = {
-    new     => 'new',
-    removed => 'removed',
-    changed => 'changed',
-    same    => '==',
-    na      => '',
-  };
-
   $self->render(
-    codebases  => $codebases,
-    plugins    => \@plugins,
-    audit      => $audit,
-    module_key => $module_key,
+    codebases => $codebases,
+    plugins   => \@plugins,
+    audit     => $audit,
+    runtime   => time - $t,
     %params
   );
 }

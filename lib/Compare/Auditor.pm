@@ -2,12 +2,11 @@ package Compare::Auditor;
 use Moose;
 use namespace::autoclean;
 use uni::perl;
-use PPI;
 use File::Find;
-use Data::Dumper;
-use File::Compare qw(compare_text);
 use List::MoreUtils qw(uniq);
-use Carp;
+use PPI;
+use Data::Dumper;
+
 
 has 'old_path' => (
   is => 'rw',
@@ -30,32 +29,30 @@ has 'plugins' => (
 sub audit {
   my $self = shift;
   my $data;
-
+  
+  warn "Begin audit\n";
+  
   foreach my $module (@{$self->modules('new')}) {
-    my $plugin_methods;
+    
+    warn "processing $module\n";
+    
+    my ($plugin_methods, $all_methods);
 
     # plugins
     foreach my $plugin (@{$self->plugins}) {
       my $methods = $self->module_methods($plugin, $module);
+      $data->{$module}->{$plugin}->{methods} = $methods;
       $plugin_methods->{$_} = 1 foreach (keys %$methods);
-
-      $data->{$module}->{$plugin} = {
-        status  => $self->module_status($plugin, $module),
-        methods => $methods,
-      }
     }
 
     # core
     my $core_methods = $self->module_methods('/', $module, [keys %$plugin_methods]);
-    my $all_methods;
     $all_methods->{$_} = $core_methods->{$_} foreach (keys %$plugin_methods);
-
-    $data->{$module}->{'/'} = {
-      status  => $self->module_status('/', $module),
-      methods => $all_methods,
-    }
+    $data->{$module}->{'/'}->{methods} = $all_methods;
   }
-
+  
+  warn "End audit\n";
+  
   return $data;
 }
 
@@ -80,32 +77,13 @@ sub modules {
   return $self->{_cache}->{modules}->{$codebase};
 }
 
-sub path_for {
-  my ($self, $codebase, $plugin, $module) = @_;
-  my $method = "${codebase}_path";
-  return ($self->$method) . "/$plugin/modules/$module";
-}
-
-sub module_status {
-  my ($self, $plugin, $module) = @_;
-  my $ofile = $self->path_for('old', $plugin, $module);
-  my $nfile = $self->path_for('new', $plugin, $module);
-  my $oexists = -f $ofile;
-  my $nexists = -f $nfile;
-  my $state = (!$oexists && $nexists) ? 'new' :
-              ($oexists && !$nexists) ? 'removed' :
-              ($oexists &&  $nexists) ? 'present' : 'na';
-  ($state = compare_text($ofile, $nfile) ? 'changed' : 'same') if $state eq 'present';
-  return $state;
-}
-
 sub module_methods {
   my ($self, $plugin, $module, $wanted) = @_;
   my $methods;
   my $ofile = $self->path_for('old', $plugin, $module);
   my $nfile = $self->path_for('new', $plugin, $module);
-  my $osubs = $self->_parse_subs($ofile, $wanted);
-  my $nsubs = $self->_parse_subs($nfile, $wanted);
+  my $osubs = $self->parse_subs($ofile, $wanted);
+  my $nsubs = $self->parse_subs($nfile, $wanted);
   foreach my $sub (uniq(keys %$osubs, keys %$nsubs)) {
     my $otext = $osubs->{$sub};
     my $ntext = $nsubs->{$sub};
@@ -118,11 +96,11 @@ sub module_methods {
   return $methods || {};
 }
 
-sub _parse_subs {
+sub parse_subs {
   my ($self, $file, $wanted) = @_;
   return {} unless -f $file;
   my $subs; 
-  my $document = PPI::Document->new($file) or confess "PPI could not open file '$file': $@";
+  my $document = PPI::Document->new($file) or die "PPI could not open file '$file': $@";
   $document->index_locations;
   for my $sub ( @{ $document->find('PPI::Statement::Sub') || [] } ) {
     unless ($sub->forward) {
@@ -133,5 +111,13 @@ sub _parse_subs {
   }
   return $subs || {};
 }
+
+sub path_for {
+  my ($self, $codebase, $plugin, $module) = @_;
+  my $method = "${codebase}_path";
+  return ($self->$method) . "/$plugin/modules/$module";
+}
+
+__PACKAGE__->meta->make_immutable;
 
 1;

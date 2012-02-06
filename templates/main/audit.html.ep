@@ -14,28 +14,48 @@
 % #<pre><%= dumper $audit %></prd>
 
 % if ($audit) {
+
+<%
+  my $key = {
+    new     => '&#10004; new',
+    removed => '&#10008; removed',
+    changed => '&#10004; changed',
+    same    => '&#10004;',
+    na      => '',
+  };
+%>
+
 <div id="results">
   <table class="modules">
     % foreach my $module (sort keys %$audit) {
       % (my $module_name = $module) =~ s/([^\/]+\.pm)$/<span>$1<\/span>/; 
-    <tr class="mod">
-      <td class="mod"><%== $module_name %></td>
+    <tr>
+      <th class="mod"><%== $module_name %></th>
       % foreach my $plugin ('ensembl', @$plugins) {
-      <td class="plugin"><%= $plugin %></td>
+      <th class="plugin"><%= $plugin %></th>
       % }
     </tr>
       % foreach my $method (sort keys %{$audit->{$module}->{'/'}->{methods}}) {
     <tr class="method">
       <td class="method"><%== $method %></td>
         % foreach my $plugin ('/', @$plugins) {
-        %   my $status = $audit->{$module}->{$plugin}->{methods}->{$method}; 
-      <td class="<%= $status %>"><span><%== $module_key->{$status} %></span></td>
+        %   my $status = $audit->{$module}->{$plugin}->{methods}->{$method} || 'na'; 
+      <td class="<%= $status %>"><%== $key->{$status} %></td>
         % }
     </tr>
       % }
     % }
-  </table>  
+    <tr class="final">
+      <td>X</td>
+      % foreach my $plugin ('ensembl', @$plugins) {
+      <td>XXXXXXXXXXXXXXXXXX</td>
+      % }
+    </tr>
+  </table> 
+  
+  % my $mods = scalar(keys %$audit) || 1;
+  Modules: <%=$mods %>, time: <%= $runtime %>s, s/mod: <%= $runtime / $mods %> 
 </div>  
-% }
 
+% }
 
