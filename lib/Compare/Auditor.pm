@@ -7,7 +7,6 @@ use List::MoreUtils qw(uniq);
 use PPI;
 use Data::Dumper;
 
-
 has 'old_path' => (
   is => 'rw',
   isa => 'Str', 
@@ -119,16 +118,14 @@ sub path_for {
 }
 
 sub extract_method_versions {
-  my ($self, $module, $method) = @_;
+  my ($self, $codebase, $module, $method) = @_;
   my $methods; 
   
-  foreach my $codebase ('old', 'new') {
-    foreach my $plugin (@{$self->plugins}) {
-      my $subs = parse_subs($self->path_for($codebase, $plugin, $module), [$method]);
-      $methods->{$codebase}->{$plugin} = $subs->{$method};
-    }
-  }  
-  
+  foreach my $plugin ('/', @{$self->plugins}) {
+    my $subs = parse_subs($self->path_for($codebase, $plugin, $module), [$method]);
+    $methods->{$plugin} = $subs->{$method};
+  }
+ 
   return $methods;
 }
 

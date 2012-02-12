@@ -14,7 +14,7 @@
   %= end
 </div>
 
-% #<pre><%= dumper $audit %></pre>
+<pre><%= dumper $methods %></pre>
 
 % if (keys %$methods) {
     <div id="menu">
@@ -22,16 +22,16 @@
       <div class="panel">
         % foreach my $codebase (qw(old new)) {
           <div>
-            <b><%= $codebase %></b> &nbsp;
+            <b><%= $methods->{$codebase}->{label} %></b> &nbsp;
           % foreach my $i (0..@$plugins - 1) {
-            % my $dir = $info->{plugin_dirs}->[$i];
-            % my $disabled = ($info->{$codebase}->{methods}->{$dir} ? '' : 'disabled');    
-            % (my $id = "${codebase}_$dir") =~ s/\//:/g;
-            % my $text = $info->{$codebase}->{methods}->{$dir};
-            % my $checked = 'checked' if (($menu == 1 and $codebase eq 'a' and $i == 0) or ($menu == 2 and $codebase eq 'b' and $i == 0));
+            % my $plugin = $plugins->[$i];
+            % my $disabled = ($methods->{$codebase}->{methods}->{$plugin} ? '' : 'disabled');    
+            % (my $id = "${codebase}_$plugin") =~ s/\//:/g;
+            % my $text = $methods->{$codebase}->{methods}->{$plugin};
+            % my $checked = 'checked' if (($menu == 1 and $codebase eq 'old' and $i == 0) or ($menu == 2 and $codebase eq 'new' and $i == 0));
             <span class="<%= $disabled %>">
               <input type="radio" class="rad" id="rad_<%= $menu %>_<%= $id %>" name="<%= "menu_$menu" %>" value="<%= $id %>" <%= $disabled %> <%= $checked %> /> 
-              <label for="rad_<%= $menu %>_<%= $id %>"><%= $info->{plugin_names}->{$dir} %></label>
+              <label for="rad_<%= $menu %>_<%= $id %>"><%= $plugin %></label>
             </span>
             <textarea id="<%= $id %>" class="code"><%= $text %></textarea>
           % }
@@ -45,6 +45,8 @@
 </div>
 
 <div id="diff"></div>
+
+<%= javascript '/js/main.js' %>
 % }
 
 

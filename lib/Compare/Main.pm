@@ -36,13 +36,13 @@ sub audit {
 
 sub diff {
   my $self = shift;
-  my @valid_params = qw(old_codebase new_codebase plugin_dirs);
+  my @valid_params = qw(old_codebase new_codebase plugin_dirs module method);
   my %params       = map {$_ => scalar $self->param($_)} @valid_params;
   my $codebases    = $self->config->{codebases};
   my $old_path     = $codebases->{$params{old_codebase}};
   my $new_path     = $codebases->{$params{new_codebase}};
-  my $module       = $codebases->{$params{module}};
-  my $method       = $codebases->{$params{method}};
+  my $module       = $params{module};
+  my $method       = $params{method};
   my @plugins      = split /[\s,]+/, $params{plugin_dirs};
   my $methods;
     
@@ -56,12 +56,23 @@ sub diff {
       plugins  => \@plugins,
     );
 
-    $methods = $auditor->extract_method_versions($module, $method);
+    $methods = {
+      old => {
+        label   => $params{old_codebase},
+        path    => $old_path,
+        methods => $auditor->extract_method_versions('old', $module, $method),
+      },
+      new => {
+        label   => $params{new_codebase},
+        path    => $new_path,
+        methods => $auditor->extract_method_versions('new', $module, $method),
+      },
+    }
   }
   
   $self->render(
     codebases => $codebases,
-    plugins   => \@plugins,
+    plugins   => ['/', @plugins],
     runtime   => time - $t,
     methods   => $methods, 
     %params
