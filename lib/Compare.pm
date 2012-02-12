@@ -7,8 +7,9 @@ sub startup {
   $self->plugin('config');
   
   my $r = $self->routes;
-  $r->route('/')->to('main#index');
+  #$r->route('/')->to('main#audit');
   $r->route('/audit')->to('main#audit');
+  $r->route('/diff')->to('main#diff');
 }
 
 1;

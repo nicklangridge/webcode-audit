@@ -1,0 +1,51 @@
+% layout 'default';
+
+<div id="header">
+  %= form_for diff => (method => 'post') => begin
+    <div id="spec">
+      Old <%= select_field old_codebase => ['select...', sort keys %$codebases] %> &nbsp;
+      New <%= select_field new_codebase => ['select...', sort keys %$codebases] %> &nbsp;
+      Plugins <%= input_tag 'plugin_dirs', class => "plugin_dirs" %> &nbsp; 
+      <br />
+      Module <%= input_tag 'module', class => "module" %> &nbsp;
+      Method <%= input_tag 'method', class => "method" %> &nbsp;
+      %= submit_button 'Go'
+    </div>
+  %= end
+</div>
+
+% #<pre><%= dumper $audit %></pre>
+
+% if (keys %$methods) {
+    <div id="menu">
+    % foreach my $menu (1, 2) {  
+      <div class="panel">
+        % foreach my $codebase (qw(old new)) {
+          <div>
+            <b><%= $codebase %></b> &nbsp;
+          % foreach my $i (0..@$plugins - 1) {
+            % my $dir = $info->{plugin_dirs}->[$i];
+            % my $disabled = ($info->{$codebase}->{methods}->{$dir} ? '' : 'disabled');    
+            % (my $id = "${codebase}_$dir") =~ s/\//:/g;
+            % my $text = $info->{$codebase}->{methods}->{$dir};
+            % my $checked = 'checked' if (($menu == 1 and $codebase eq 'a' and $i == 0) or ($menu == 2 and $codebase eq 'b' and $i == 0));
+            <span class="<%= $disabled %>">
+              <input type="radio" class="rad" id="rad_<%= $menu %>_<%= $id %>" name="<%= "menu_$menu" %>" value="<%= $id %>" <%= $disabled %> <%= $checked %> /> 
+              <label for="rad_<%= $menu %>_<%= $id %>"><%= $info->{plugin_names}->{$dir} %></label>
+            </span>
+            <textarea id="<%= $id %>" class="code"><%= $text %></textarea>
+          % }
+          </div>
+        % }
+      </div>
+      % }
+      <div class="clear"></div>
+    </div>
+  </form>
+</div>
+
+<div id="diff"></div>
+% }
+
+
+

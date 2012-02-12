@@ -118,6 +118,20 @@ sub path_for {
   return ($self->$method) . "/$plugin/modules/$module";
 }
 
+sub extract_method_versions {
+  my ($self, $module, $method) = @_;
+  my $methods; 
+  
+  foreach my $codebase ('old', 'new') {
+    foreach my $plugin (@{$self->plugins}) {
+      my $subs = parse_subs($self->path_for($codebase, $plugin, $module), [$method]);
+      $methods->{$codebase}->{$plugin} = $subs->{$method};
+    }
+  }  
+  
+  return $methods;
+}
+
 __PACKAGE__->meta->make_immutable;
 
 1;

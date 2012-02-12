@@ -5310,3 +5310,119 @@ Global symbol "$mods" requires explicit package name at template "main/audit.htm
 [Mon Feb  6 15:57:58 2012] [debug] Rendering template "main/audit.html.ep".
 [Mon Feb  6 15:57:58 2012] [debug] Rendering template "layouts/default.html.ep".
 [Mon Feb  6 15:57:58 2012] [debug] 200 OK (84.436337s, 0.012/s).
+[Sun Feb 12 09:03:24 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 09:03:24 2012] [info] Server listening (http://*:3000)
+[Sun Feb 12 09:03:36 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb 12 09:03:36 2012] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb 12 09:03:36 2012] [debug] Dispatching "Compare::Main->index".
+[Sun Feb 12 09:03:39 2012] [debug] Action "Compare::Main->index" not found, assuming template without action.
+[Sun Feb 12 09:03:39 2012] [debug] Rendering template "main/index.html.ep".
+[Sun Feb 12 09:03:39 2012] [error] Global symbol "$info" requires explicit package name at template "main/index.html.ep" line 5, near "    <input type="hidden" id="b_label" name="hidden_b_label" value="<%= $info->{b}->{label} %>" />".
+Global symbol "$info" requires explicit package name at template "main/index.html.ep" line 6, near "  ".
+Global symbol "$a_label" requires explicit package name at template "main/index.html.ep" line 10, near "      Path <input type="text" class="path" name="a_path" value="<%= $a_path %>" /> &nbsp;".
+Global symbol "$a_path" requires explicit package name at template "main/index.html.ep" line 11, near "      <strong>New</strong> &nbsp;".
+Global symbol "$b_label" requires explicit package name at template "main/index.html.ep" line 13, near "      Path <input type="text" class="path" name="b_path" value="<%= $b_path %>" /> &nbsp;     ".
+Global symbol "$b_path" requires explicit package name at template "main/index.html.ep" line 14, near "      <br />".
+Global symbol "$plugin_dirs" requires explicit package name at template "main/index.html.ep" line 16, near "      Module <input type="text" class="module" name="module" value="<%= $module %>" /> &nbsp; ".
+Global symbol "$module" requires explicit package name at template "main/index.html.ep" line 17, near "      Method <input type="text" class="method" name="method" value="<%= $method %>" /> &nbsp; ".
+Global symbol "$method" requires explicit package name at template "main/index.html.ep" line 18, near "      <input type="submit" class="submit" value="Go">".
+Global symbol "$info" requires explicit package name at template "main/index.html.ep" line 22, near "    <div id="menu">".
+Global symbol "$info" requires explicit package name at template "main/index.html.ep" line 28, near "          % foreach my $i (0..@{$info->{plugin_dirs}} - 1) {".
+Global symbol "$info" requires explicit package name at template "main/index.html.ep" line 29, near "            % my $dir = $info->{plugin_dirs}->[$i];".
+Global symbol "$info" requires explicit package name at template "main/index.html.ep" line 30, near "            % my $disabled = ($info->{$codebase}->{methods}->{$dir} ? '' : 'disabled');    ".
+Global symbol "$info" requires explicit package name at template "main/index.html.ep" line 31, near "            % (my $id = "${codebase}_$dir") =~ s/\//:/g;".
+Global symbol "$info" requires explicit package name at template "main/index.html.ep" line 33, near "            % my $checked = 'checked' if (($menu == 1 and $codebase eq 'a' and $i == 0) or ($menu == 2 and $codebase eq 'b' and $i == 0));".
+Global symbol "$info" requires explicit package name at template "main/index.html.ep" line 37, near "            </span>".
+1: % layout 'default';
+2: 
+3: <div id="header">
+4:   <form name="settings" method="post" action="/">
+5:     <input type="hidden" id="a_label" name="hidden_a_label" value="<%= $info->{a}->{label} %>" />
+6:     <input type="hidden" id="b_label" name="hidden_b_label" value="<%= $info->{b}->{label} %>" />
+7:   
+8:     <div id="spec">
+9:       <strong>Old</strong> &nbsp;
+10:       Label <input type="text" class="label" name="a_label" value="<%= $a_label %>" /> &nbsp;
+
+[Sun Feb 12 09:03:39 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Feb 12 09:03:39 2012] [debug] Template "exception.html.ep" not found.
+[Sun Feb 12 09:03:39 2012] [debug] Rendering inline template.
+[Sun Feb 12 09:03:39 2012] [debug] Rendering inline template.
+[Sun Feb 12 09:03:39 2012] [debug] 500 Internal Server Error (3.592535s, 0.278/s).
+[Sun Feb 12 09:04:34 2012] [debug] GET /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb 12 09:04:34 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb 12 09:04:34 2012] [debug] Rendering template "main/audit.html.ep".
+[Sun Feb 12 09:04:34 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb 12 09:04:34 2012] [debug] 200 OK (0.035757s, 27.967/s).
+[Sun Feb 12 09:06:09 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 09:06:09 2012] [info] Server listening (http://*:3000)
+[Sun Feb 12 09:06:13 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb 12 09:06:13 2012] [debug] GET /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb 12 09:06:13 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb 12 09:06:14 2012] [debug] Rendering template "main/audit.html.ep".
+[Sun Feb 12 09:06:14 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb 12 09:06:14 2012] [debug] 200 OK (0.678064s, 1.475/s).
+[Sun Feb 12 09:06:32 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb 12 09:06:32 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb 12 09:07:42 2012] [debug] 200 OK (69.337612s, 0.014/s).
+[Sun Feb 12 09:13:38 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 09:25:03 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 09:25:04 2012] [info] Server listening (http://*:3000)
+[Sun Feb 12 09:25:07 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb 12 09:25:07 2012] [debug] GET /diff (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb 12 09:25:07 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb 12 09:25:07 2012] [debug] Template "not_found.html.ep" not found.
+[Sun Feb 12 09:25:07 2012] [debug] Rendering inline template.
+[Sun Feb 12 09:25:07 2012] [debug] Rendering inline template.
+[Sun Feb 12 09:25:07 2012] [debug] 404 Not Found (0.034018s, 29.396/s).
+[Sun Feb 12 09:26:42 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 09:26:57 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 09:27:06 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb 12 09:27:06 2012] [debug] GET /diff (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb 12 09:27:06 2012] [debug] Dispatching "Compare::Main->diff".
+[Sun Feb 12 09:27:07 2012] [debug] Rendering template "main/diff.html.ep".
+[Sun Feb 12 09:27:07 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb 12 09:27:07 2012] [debug] 200 OK (0.666589s, 1.500/s).
+[Sun Feb 12 09:36:43 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 09:38:07 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 09:38:23 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 09:38:27 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 09:38:43 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 09:39:12 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 09:41:04 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 09:42:06 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 09:42:38 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 09:43:20 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 09:43:25 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 09:43:30 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 09:43:37 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 09:43:55 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 09:44:01 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 09:45:14 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 09:45:27 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 09:46:30 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 09:46:37 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 09:51:29 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb 12 09:51:29 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb 12 09:51:29 2012] [debug] Dispatching "Compare::Main->audit".
+[Sun Feb 12 09:52:34 2012] [debug] Rendering template "main/audit.html.ep".
+[Sun Feb 12 09:52:34 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb 12 09:52:34 2012] [debug] 200 OK (65.289070s, 0.015/s).
+[Sun Feb 12 09:52:34 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 09:52:48 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 09:52:48 2012] [info] Server listening (http://*:3000)
+[Sun Feb 12 09:52:57 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb 12 09:52:57 2012] [debug] GET /diff (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb 12 09:52:57 2012] [debug] Dispatching "Compare::Main->diff".
+[Sun Feb 12 09:52:58 2012] [debug] Rendering template "main/diff.html.ep".
+[Sun Feb 12 09:52:58 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb 12 09:52:58 2012] [debug] 200 OK (0.696191s, 1.436/s).
+[Sun Feb 12 09:53:00 2012] [debug] POST /diff (Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0).
+[Sun Feb 12 09:53:00 2012] [debug] Dispatching "Compare::Main->diff".
+[Sun Feb 12 09:53:00 2012] [debug] 200 OK (0.009295s, 107.585/s).
+[Sun Feb 12 10:00:56 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 10:01:58 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 10:02:08 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 10:02:55 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 10:03:07 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
+[Sun Feb 12 10:03:57 2012] [debug] Reading config file "C:\dev\compare\compare.conf".
