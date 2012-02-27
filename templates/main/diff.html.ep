@@ -9,12 +9,14 @@
       <br />
       Module <%= input_tag 'module', class => "module" %> &nbsp;
       Method <%= input_tag 'method', class => "method" %> &nbsp;
+      <%= hidden_field old_label => $methods->{old}->{label}, id => 'old_label' %>
+      <%= hidden_field new_label => $methods->{new}->{label}, id => 'new_label' %>
       %= submit_button 'Go'
     </div>
   %= end
 </div>
 
-<pre><%= dumper $methods %></pre>
+<!--<pre><%= dumper $methods %></pre>-->
 
 % if (keys %$methods) {
     <div id="menu">
@@ -31,7 +33,7 @@
             % my $checked = 'checked' if (($menu == 1 and $codebase eq 'old' and $i == 0) or ($menu == 2 and $codebase eq 'new' and $i == 0));
             <span class="<%= $disabled %>">
               <input type="radio" class="rad" id="rad_<%= $menu %>_<%= $id %>" name="<%= "menu_$menu" %>" value="<%= $id %>" <%= $disabled %> <%= $checked %> /> 
-              <label for="rad_<%= $menu %>_<%= $id %>"><%= $plugin %></label>
+              <label for="rad_<%= $menu %>_<%= $id %>"><%= $plugin eq '/' ? 'ensembl' : $plugin %></label>
             </span>
             <textarea id="<%= $id %>" class="code"><%= $text %></textarea>
           % }

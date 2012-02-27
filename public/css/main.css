@@ -48,6 +48,9 @@ input.submit {
 }
 
 #menu {
+  position: fixed;
+  width: 100%;
+  top: 72px;
   padding: 10px 10px 13px 10px;
   white-space: nowrap;
   font-size: 12px;

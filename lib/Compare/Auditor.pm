@@ -122,7 +122,7 @@ sub extract_method_versions {
   my $methods; 
   
   foreach my $plugin ('/', @{$self->plugins}) {
-    my $subs = parse_subs($self->path_for($codebase, $plugin, $module), [$method]);
+    my $subs = $self->parse_subs($self->path_for($codebase, $plugin, $module), [$method]);
     $methods->{$plugin} = $subs->{$method};
   }
  
