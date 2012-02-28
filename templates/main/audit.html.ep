@@ -37,7 +37,19 @@
     </tr>
       % foreach my $method (sort keys %{$audit->{$module}->{'/'}->{methods}}) {
     <tr class="method">
-      <td class="method"><%== $method %></td>
+      <td class="method">
+      <%= link_to url_for('diff')->query(
+        old_codebase => $old_codebase, 
+        new_codebase => $new_codebase, 
+        plugin_dirs => $plugin_dirs, 
+        module => $module,
+        method => $method,
+        old_label => $old_codebase, 
+        new_label => $new_codebase, 
+      ) => begin %>        
+        <%= $method %>
+      <% end %>        
+      </td>
         % foreach my $plugin ('/', @$plugins) {
         %   my $status = $audit->{$module}->{$plugin}->{methods}->{$method} || 'na'; 
       <td class="<%= $status %>"><%== $key->{$status} %></td>

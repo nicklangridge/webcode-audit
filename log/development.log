@@ -5677,3 +5677,127 @@ Global symbol "$data" requires explicit package name at template "main/diff.html
 [Mon Feb 27 20:32:02 2012] [debug] Rendering template "main/diff.html.ep".
 [Mon Feb 27 20:32:02 2012] [debug] Rendering template "layouts/default.html.ep".
 [Mon Feb 27 20:32:02 2012] [debug] 200 OK (0.929293s, 1.076/s).
+[Tue Feb 28 08:39:56 2012] [debug] Reading config file "H:\my_dev\compare\compare.conf".
+[Tue Feb 28 08:39:56 2012] [info] Server listening (http://*:3000)
+[Tue Feb 28 09:59:27 2012] [debug] Your secret passphrase needs to be changed!!!
+[Tue Feb 28 09:59:27 2012] [debug] GET /audit (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1).
+[Tue Feb 28 09:59:27 2012] [debug] Dispatching "Compare::Main->audit".
+[Tue Feb 28 09:59:38 2012] [debug] Rendering template "main/audit.html.ep".
+[Tue Feb 28 09:59:38 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Feb 28 09:59:38 2012] [debug] 200 OK (11.310883s, 0.088/s).
+[Tue Feb 28 09:59:45 2012] [debug] GET /diff (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1).
+[Tue Feb 28 09:59:45 2012] [debug] Dispatching "Compare::Main->diff".
+[Tue Feb 28 09:59:45 2012] [debug] Rendering template "main/diff.html.ep".
+[Tue Feb 28 09:59:45 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Feb 28 09:59:45 2012] [debug] 200 OK (0.060588s, 16.505/s).
+[Tue Feb 28 10:00:14 2012] [debug] POST /diff (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1).
+[Tue Feb 28 10:00:14 2012] [debug] Dispatching "Compare::Main->diff".
+[Tue Feb 28 10:00:14 2012] [debug] 200 OK (0.483815s, 2.067/s).
+[Tue Feb 28 10:02:30 2012] [debug] Reading config file "H:\my_dev\compare\compare.conf".
+[Tue Feb 28 10:02:30 2012] [info] Server listening (http://*:3000)
+[Tue Feb 28 10:02:34 2012] [debug] Your secret passphrase needs to be changed!!!
+[Tue Feb 28 10:02:34 2012] [debug] POST /diff (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1).
+[Tue Feb 28 10:02:34 2012] [debug] Dispatching "Compare::Main->diff".
+[Tue Feb 28 10:02:37 2012] [debug] Rendering template "main/diff.html.ep".
+[Tue Feb 28 10:02:37 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Feb 28 10:02:37 2012] [debug] 200 OK (3.819135s, 0.262/s).
+[Tue Feb 28 10:06:30 2012] [debug] POST /diff (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1).
+[Tue Feb 28 10:06:30 2012] [debug] Dispatching "Compare::Main->diff".
+[Tue Feb 28 10:06:30 2012] [debug] 200 OK (0.491612s, 2.034/s).
+[Tue Feb 28 10:21:48 2012] [debug] Reading config file "H:\my_dev\compare\compare.conf".
+[Tue Feb 28 10:21:59 2012] [debug] Your secret passphrase needs to be changed!!!
+[Tue Feb 28 10:21:59 2012] [debug] POST /diff (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1).
+[Tue Feb 28 10:21:59 2012] [debug] Dispatching "Compare::Main->diff".
+[Tue Feb 28 10:22:03 2012] [debug] Rendering template "main/diff.html.ep".
+[Tue Feb 28 10:22:03 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Feb 28 10:22:03 2012] [debug] 200 OK (4.335696s, 0.231/s).
+[Tue Feb 28 10:22:05 2012] [debug] GET /diff (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1).
+[Tue Feb 28 10:22:05 2012] [debug] Dispatching "Compare::Main->diff".
+[Tue Feb 28 10:22:05 2012] [debug] 200 OK (0.175906s, 5.685/s).
+[Tue Feb 28 10:26:50 2012] [debug] Reading config file "H:\my_dev\compare\compare.conf".
+[Tue Feb 28 10:29:55 2012] [debug] Reading config file "H:\my_dev\compare\compare.conf".
+[Tue Feb 28 10:30:29 2012] [debug] Reading config file "H:\my_dev\compare\compare.conf".
+[Tue Feb 28 10:30:38 2012] [debug] Your secret passphrase needs to be changed!!!
+[Tue Feb 28 10:30:38 2012] [debug] GET /audit (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1).
+[Tue Feb 28 10:30:38 2012] [debug] Dispatching "Compare::Main->audit".
+[Tue Feb 28 10:30:43 2012] [debug] Rendering template "main/audit.html.ep".
+[Tue Feb 28 10:30:43 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Feb 28 10:30:43 2012] [debug] 200 OK (4.624542s, 0.216/s).
+[Tue Feb 28 10:31:01 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1).
+[Tue Feb 28 10:31:01 2012] [debug] Dispatching "Compare::Main->audit".
+[Tue Feb 28 10:31:01 2012] [error] invalid top directory at C:/strawberry/perl/lib/File/Find.pm line 598.
+
+[Tue Feb 28 10:31:01 2012] [debug] Template "exception.development.html.ep" not found.
+[Tue Feb 28 10:31:01 2012] [debug] Template "exception.html.ep" not found.
+[Tue Feb 28 10:31:01 2012] [debug] Rendering inline template.
+[Tue Feb 28 10:31:01 2012] [debug] Rendering inline template.
+[Tue Feb 28 10:31:01 2012] [debug] 500 Internal Server Error (0.083546s, 11.969/s).
+[Tue Feb 28 10:31:01 2012] [error] invalid top directory at C:/strawberry/perl/lib/File/Find.pm line 598.
+
+[Tue Feb 28 10:31:31 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1).
+[Tue Feb 28 10:31:31 2012] [debug] Dispatching "Compare::Main->audit".
+[Tue Feb 28 10:31:47 2012] [debug] 200 OK (16.326805s, 0.061/s).
+[Tue Feb 28 10:32:15 2012] [debug] Reading config file "H:\my_dev\compare\compare.conf".
+[Tue Feb 28 10:32:17 2012] [debug] Your secret passphrase needs to be changed!!!
+[Tue Feb 28 10:32:17 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1).
+[Tue Feb 28 10:32:17 2012] [debug] Dispatching "Compare::Main->audit".
+[Tue Feb 28 10:32:34 2012] [debug] Rendering template "main/audit.html.ep".
+[Tue Feb 28 10:32:34 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Feb 28 10:32:34 2012] [debug] 200 OK (17.807807s, 0.056/s).
+[Tue Feb 28 10:32:42 2012] [debug] GET /diff (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1).
+[Tue Feb 28 10:32:42 2012] [debug] Dispatching "Compare::Main->diff".
+[Tue Feb 28 10:32:42 2012] [debug] Rendering template "main/diff.html.ep".
+[Tue Feb 28 10:32:42 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Feb 28 10:32:42 2012] [debug] 200 OK (0.061345s, 16.301/s).
+[Tue Feb 28 10:33:18 2012] [debug] Reading config file "H:\my_dev\compare\compare.conf".
+[Tue Feb 28 10:33:26 2012] [debug] Reading config file "H:\my_dev\compare\compare.conf".
+[Tue Feb 28 10:33:28 2012] [debug] Your secret passphrase needs to be changed!!!
+[Tue Feb 28 10:33:28 2012] [debug] GET /diff (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1).
+[Tue Feb 28 10:33:28 2012] [debug] Dispatching "Compare::Main->diff".
+[Tue Feb 28 10:33:32 2012] [debug] Rendering template "main/diff.html.ep".
+[Tue Feb 28 10:33:32 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Feb 28 10:33:32 2012] [debug] 200 OK (4.001878s, 0.250/s).
+[Tue Feb 28 10:33:34 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1).
+[Tue Feb 28 10:33:34 2012] [debug] Dispatching "Compare::Main->audit".
+[Tue Feb 28 10:33:49 2012] [debug] Rendering template "main/audit.html.ep".
+[Tue Feb 28 10:33:49 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Feb 28 10:33:49 2012] [debug] 200 OK (15.029433s, 0.067/s).
+[Tue Feb 28 10:33:50 2012] [debug] GET /diff (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1).
+[Tue Feb 28 10:33:50 2012] [debug] Dispatching "Compare::Main->diff".
+[Tue Feb 28 10:33:51 2012] [debug] 200 OK (0.361106s, 2.769/s).
+[Tue Feb 28 10:36:06 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1).
+[Tue Feb 28 10:36:06 2012] [debug] Dispatching "Compare::Main->audit".
+[Tue Feb 28 10:36:21 2012] [debug] 200 OK (15.557059s, 0.064/s).
+[Tue Feb 28 10:36:34 2012] [debug] GET /diff (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1).
+[Tue Feb 28 10:36:34 2012] [debug] Dispatching "Compare::Main->diff".
+[Tue Feb 28 10:36:35 2012] [debug] 200 OK (0.383284s, 2.609/s).
+[Tue Feb 28 10:36:54 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1).
+[Tue Feb 28 10:36:54 2012] [debug] Dispatching "Compare::Main->audit".
+[Tue Feb 28 10:38:42 2012] [debug] 200 OK (107.952568s, 0.009/s).
+[Tue Feb 28 10:42:54 2012] [debug] GET /diff (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1).
+[Tue Feb 28 10:42:54 2012] [debug] Dispatching "Compare::Main->diff".
+[Tue Feb 28 10:42:55 2012] [debug] 200 OK (0.306929s, 3.258/s).
+[Tue Feb 28 10:44:30 2012] [debug] Reading config file "H:\my_dev\compare\compare.conf".
+[Tue Feb 28 10:44:49 2012] [debug] Your secret passphrase needs to be changed!!!
+[Tue Feb 28 10:44:50 2012] [debug] GET /diff (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1).
+[Tue Feb 28 10:44:50 2012] [debug] Dispatching "Compare::Main->diff".
+[Tue Feb 28 10:44:54 2012] [debug] Rendering template "main/diff.html.ep".
+[Tue Feb 28 10:44:54 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Feb 28 10:44:54 2012] [debug] 200 OK (4.327901s, 0.231/s).
+[Tue Feb 28 10:44:54 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1).
+[Tue Feb 28 10:44:54 2012] [debug] Dispatching "Compare::Main->audit".
+[Tue Feb 28 10:46:51 2012] [debug] Rendering template "main/audit.html.ep".
+[Tue Feb 28 10:46:52 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Feb 28 10:46:52 2012] [debug] 200 OK (117.733433s, 0.008/s).
+[Tue Feb 28 10:56:57 2012] [debug] GET /diff (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1).
+[Tue Feb 28 10:56:57 2012] [debug] Dispatching "Compare::Main->diff".
+[Tue Feb 28 10:56:58 2012] [debug] 200 OK (0.658064s, 1.520/s).
+[Tue Feb 28 10:59:08 2012] [debug] GET /diff (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1).
+[Tue Feb 28 10:59:08 2012] [debug] Dispatching "Compare::Main->diff".
+[Tue Feb 28 10:59:09 2012] [debug] 200 OK (0.233530s, 4.282/s).
+[Tue Feb 28 11:02:48 2012] [debug] GET /audit (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1).
+[Tue Feb 28 11:02:48 2012] [debug] Dispatching "Compare::Main->audit".
+[Tue Feb 28 11:02:48 2012] [debug] 200 OK (0.011032s, 90.645/s).
+[Tue Feb 28 11:03:02 2012] [debug] POST /audit (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1).
+[Tue Feb 28 11:03:02 2012] [debug] Dispatching "Compare::Main->audit".
+[Tue Feb 28 11:04:32 2012] [debug] 200 OK (90.116309s, 0.011/s).

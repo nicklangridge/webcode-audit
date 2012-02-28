@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+a {
+  color: #333333;
+}
+
 input.path {
   width: 420px;
 }

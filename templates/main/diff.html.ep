@@ -1,7 +1,7 @@
 % layout 'default';
 
 <div id="header">
-  %= form_for diff => (method => 'post') => begin
+  %= form_for diff => (method => 'get') => begin
     <div id="spec">
       Old <%= select_field old_codebase => ['select...', sort keys %$codebases] %> &nbsp;
       New <%= select_field new_codebase => ['select...', sort keys %$codebases] %> &nbsp;
